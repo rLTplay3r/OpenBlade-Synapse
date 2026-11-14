@@ -10,3 +10,5 @@ tools/_out/
 Neon Green Gaming Mouse Dashboard.png
 __pycache__/
 *.pyc
+install-gh.sh
+**/.qmlls.ini
