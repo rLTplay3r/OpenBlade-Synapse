@@ -1,0 +1,19 @@
+{
+  "_comment": "Callout anchor points per product, as fractions (x, y) of the mouse's bounding box in its top-down image. Products not listed use '_generic'. Measured on the official render.",
+  "_generic": {
+    "left": [0.30, 0.20],
+    "right": [0.70, 0.20],
+    "middle": [0.50, 0.14],
+    "forward": [0.04, 0.36],
+    "back": [0.04, 0.47],
+    "dpi": [0.50, 0.70]
+  },
+  "Razer DeathAdder V3": {
+    "left": [0.27, 0.217],
+    "right": [0.757, 0.217],
+    "middle": [0.50, 0.152],
+    "forward": [0.032, 0.356],
+    "back": [0.032, 0.469],
+    "dpi": [0.50, 0.715]
+  }
+}

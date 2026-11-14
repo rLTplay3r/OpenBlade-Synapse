@@ -1,0 +1,20 @@
+singleton Theme 1.0 Theme.qml
+Icon 1.0 Icon.qml
+ChamferPanel 1.0 ChamferPanel.qml
+NeonButton 1.0 NeonButton.qml
+IconButton 1.0 IconButton.qml
+NeonTooltip 1.0 NeonTooltip.qml
+NeonToggle 1.0 NeonToggle.qml
+NeonSlider 1.0 NeonSlider.qml
+NeonCombo 1.0 NeonCombo.qml
+KeyCapture 1.0 KeyCapture.qml
+ActionPopup 1.0 ActionPopup.qml
+DevicesPanel 1.0 DevicesPanel.qml
+PerformancePanel 1.0 PerformancePanel.qml
+CustomPanel 1.0 CustomPanel.qml
+MouseView 1.0 MouseView.qml
+MacrosPanel 1.0 MacrosPanel.qml
+ProfilesPanel 1.0 ProfilesPanel.qml
+SettingsPanel 1.0 SettingsPanel.qml
+Toast 1.0 Toast.qml
+ConfirmPopup 1.0 ConfirmPopup.qml

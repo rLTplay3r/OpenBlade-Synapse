@@ -1,0 +1,1714 @@
+{
+ "0042": {
+  "class": "RazerAbyssus",
+  "name": "Razer Abyssus",
+  "pid": "0042",
+  "max_dpi": null,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": false,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/274/abyssus2014_500x500.png"
+ },
+ "0020": {
+  "class": "RazerAbyssus1800",
+  "name": "Razer Abyssus 1800",
+  "pid": "0020",
+  "max_dpi": 1800,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1277/1277_abyssus_2000.png"
+ },
+ "005e": {
+  "class": "RazerAbyssus2000",
+  "name": "Razer Abyssus 2000",
+  "pid": "005e",
+  "max_dpi": 2000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1277/1277_abyssus_2000.png"
+ },
+ "006a": {
+  "class": "RazerAbyssusEliteDVaEdition",
+  "name": "Razer Abyssus Elite (D.Va Edition)",
+  "pid": "006a",
+  "max_dpi": 7200,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1288/d.va_abyssus_elite.png"
+ },
+ "006b": {
+  "class": "RazerAbyssusEssential",
+  "name": "Razer Abyssus Essential",
+  "pid": "006b",
+  "max_dpi": 7200,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1290/1290_abyssusessential.png"
+ },
+ "005b": {
+  "class": "RazerAbyssusV2",
+  "name": "Razer Abyssus V2",
+  "pid": "005b",
+  "max_dpi": 5000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/721/721_abyssusv2.png"
+ },
+ "0062": {
+  "class": "RazerAtherisReceiver",
+  "name": "Razer Atheris (Receiver)",
+  "pid": "0062",
+  "max_dpi": 7200,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1234/1234_atheris.png"
+ },
+ "0064": {
+  "class": "RazerBasilisk",
+  "name": "Razer Basilisk",
+  "pid": "0064",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1241/1241_basilisk.png"
+ },
+ "0065": {
+  "class": "RazerBasiliskEssential",
+  "name": "Razer Basilisk Essential",
+  "pid": "0065",
+  "max_dpi": 6400,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/h19/h61/9080617500702/Basilisk-Essential-500x500.png"
+ },
+ "00d4": {
+  "class": "RazerBasiliskMobileReceiver",
+  "name": "Razer Basilisk Mobile (Receiver)",
+  "pid": "00d4",
+  "max_dpi": 18000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/15485/15485-1-en-v2.png"
+ },
+ "00d3": {
+  "class": "RazerBasiliskMobileWired",
+  "name": "Razer Basilisk Mobile (Wired)",
+  "pid": "00d3",
+  "max_dpi": 18000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/15485/15485-1-en-v2.png"
+ },
+ "0086": {
+  "class": "RazerBasiliskUltimateWired",
+  "name": "Razer Basilisk Ultimate",
+  "pid": "0086",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1590/1590_basilisk_ultimate.png"
+ },
+ "0085": {
+  "class": "RazerBasiliskV2",
+  "name": "Razer Basilisk V2",
+  "pid": "0085",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1617/1617_basilisk-v2.png"
+ },
+ "0099": {
+  "class": "RazerBasiliskV3",
+  "name": "Razer Basilisk V3",
+  "pid": "0099",
+  "max_dpi": 26000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets2.razerzone.com/pages/basilisk-v3-4D578898E8144Le8da21dde32b7a9f5f/basilisk.png"
+ },
+ "00cb": {
+  "class": "RazerBasiliskV3_35K",
+  "name": "Razer Basilisk V3 35K",
+  "pid": "00cb",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/he4/h63/9822107926558/basilisk-v3-35k-2-500x500.png"
+ },
+ "00aa": {
+  "class": "RazerBasiliskV3ProWired",
+  "name": "Razer Basilisk V3 Pro (Wired)",
+  "pid": "00aa",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/6220/6220-4-en-v1.png"
+ },
+ "00ab": {
+  "class": "RazerBasiliskV3ProWireless",
+  "name": "Razer Basilisk V3 Pro (Wireless)",
+  "pid": "00ab",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/6220/6220-4-en-v1.png"
+ },
+ "00cc": {
+  "class": "RazerBasiliskV3Pro35KWired",
+  "name": "Razer Basilisk V3 Pro 35K (Wired)",
+  "pid": "00cc",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/14676/14676-1-en-v1.png"
+ },
+ "00cd": {
+  "class": "RazerBasiliskV3Pro35KWireless",
+  "name": "Razer Basilisk V3 Pro 35K (Wireless)",
+  "pid": "00cd",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/14676/14676-1-en-v1.png"
+ },
+ "00d6": {
+  "class": "RazerBasiliskV3Pro35KPhantomGreenEditionWired",
+  "name": "Razer Basilisk V3 Pro 35K Phantom Green Edition (Wired)",
+  "pid": "00d6",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/haa/h04/9917236707358/250605-basilisk-v3-pro-35k-phantom-green-1500x1000-4.jpg"
+ },
+ "00d7": {
+  "class": "RazerBasiliskV3Pro35KPhantomGreenEditionWireless",
+  "name": "Razer Basilisk V3 Pro 35K Phantom Green Edition (Wireless)",
+  "pid": "00d7",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/haa/h04/9917236707358/250605-basilisk-v3-pro-35k-phantom-green-1500x1000-4.jpg"
+ },
+ "00b9": {
+  "class": "RazerBasiliskV3XHyperSpeed",
+  "name": "Razer Basilisk V3 X HyperSpeed",
+  "pid": "00b9",
+  "max_dpi": 18000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/9766/9766-1-en-v1.png"
+ },
+ "0083": {
+  "class": "RazerBasiliskXHyperSpeed",
+  "name": "Razer Basilisk X HyperSpeed",
+  "pid": "0083",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1589/1589_basilisk_x__hyperspeed.png"
+ },
+ "00a3": {
+  "class": "RazerCobra",
+  "name": "Razer Cobra",
+  "pid": "00a3",
+  "max_dpi": 8500,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/h54/h60/9591466950686/cobra-500x500.png"
+ },
+ "00af": {
+  "class": "RazerCobraProWired",
+  "name": "Razer Cobra Pro (Wired)",
+  "pid": "00af",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/13182/13182-1-en-v2.png"
+ },
+ "00b0": {
+  "class": "RazerCobraProWireless",
+  "name": "Razer Cobra Pro (Wireless)",
+  "pid": "00b0",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/13182/13182-1-en-v2.png"
+ },
+ "0038": {
+  "class": "RazerDeathAdder1800",
+  "name": "Razer DeathAdder 1800",
+  "pid": "0038",
+  "max_dpi": 1800,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://rzrwarranty.s3.amazonaws.com/a7daf40ad78c9584a693e310effa956019cdcd081391f93f71a7cd36d3dc577e.png"
+ },
+ "004f": {
+  "class": "RazerDeathAdder2000",
+  "name": "Razer DeathAdder 2000",
+  "pid": "004f",
+  "max_dpi": 2000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets2.razerzone.com/images/da10m/carousel/razer-death-adder-gallery-09.png"
+ },
+ "0037": {
+  "class": "RazerDeathAdder2013",
+  "name": "Razer DeathAdder 2013",
+  "pid": "0037",
+  "max_dpi": 6400,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/561/561_deathadder_classic.png"
+ },
+ "0016": {
+  "class": "RazerDeathAdder3_5G",
+  "name": "Razer DeathAdder 3.5G",
+  "pid": "0016",
+  "max_dpi": 3500,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets2.razerzone.com/images/da10m/carousel/razer-death-adder-gallery-04.png"
+ },
+ "0029": {
+  "class": "RazerDeathAdder3_5GBlack",
+  "name": "Razer DeathAdder 3.5G Black",
+  "pid": "0029",
+  "max_dpi": 3500,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/products/33/razer-deathadder-be-gallery-3.png"
+ },
+ "0054": {
+  "class": "RazerDeathAdder3500",
+  "name": "Razer DeathAdder 3500",
+  "pid": "0054",
+  "max_dpi": 3500,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/561/561_deathadder_classic.png"
+ },
+ "0043": {
+  "class": "RazerDeathAdderChroma",
+  "name": "Razer DeathAdder Chroma",
+  "pid": "0043",
+  "max_dpi": 10000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/278/278_deathadder_chroma.png"
+ },
+ "005c": {
+  "class": "RazerDeathAdderElite",
+  "name": "Razer DeathAdder Elite",
+  "pid": "005c",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/724/724_deathadderelite_500x500.png"
+ },
+ "006e": {
+  "class": "RazerDeathAdderEssential",
+  "name": "Razer DeathAdder Essential",
+  "pid": "006e",
+  "max_dpi": 6400,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1385/1385_deathadderessential.png"
+ },
+ "0098": {
+  "class": "RazerDeathAdderEssential2021",
+  "name": "Razer DeathAdder Essential (2021)",
+  "pid": "0098",
+  "max_dpi": 6400,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1385/1385_deathadderessential.png"
+ },
+ "0071": {
+  "class": "RazerDeathAdderEssentialWhiteEdition",
+  "name": "Razer DeathAdder Essential (White Edition)",
+  "pid": "0071",
+  "max_dpi": 6400,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets2.razerzone.com/images/da10m/carousel/razer-death-adder-gallery-25.png"
+ },
+ "0084": {
+  "class": "RazerDeathAdderV2",
+  "name": "Razer DeathAdder V2",
+  "pid": "0084",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1612/1612_razerdeathadderv2.png"
+ },
+ "00a1": {
+  "class": "RazerDeathAdderV2Lite",
+  "name": "Razer DeathAdder V2 Lite",
+  "pid": "00a1",
+  "max_dpi": 8500,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1692/deathadder-v2-mini.png"
+ },
+ "008c": {
+  "class": "RazerDeathAdderV2Mini",
+  "name": "Razer DeathAdder V2 Mini",
+  "pid": "008c",
+  "max_dpi": 8500,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1692/deathadder-v2-mini.png"
+ },
+ "007c": {
+  "class": "RazerDeathAdderV2ProWired",
+  "name": "Razer DeathAdder V2 Pro (Wired)",
+  "pid": "007c",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1714/comp_1_00000.png"
+ },
+ "007d": {
+  "class": "RazerDeathAdderV2ProWireless",
+  "name": "Razer DeathAdder V2 Pro (Wireless)",
+  "pid": "007d",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1714/comp_1_00000.png"
+ },
+ "009c": {
+  "class": "RazerDeathAdderV2XHyperSpeed",
+  "name": "Razer DeathAdder V2 X HyperSpeed",
+  "pid": "009c",
+  "max_dpi": 14000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/he8/h51/9250345058334/deathadder-v2-x-hyperspeed-500x500.png"
+ },
+ "00b2": {
+  "class": "RazerDeathAdderV3",
+  "name": "Razer DeathAdder V3",
+  "pid": "00b2",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000,
+   2000,
+   4000,
+   8000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://dl.razerzone.com/src/6124/6124-1-en-v2.png"
+ },
+ "00c4": {
+  "class": "RazerDeathAdderV3HyperSpeedWired",
+  "name": "Razer DeathAdder V3 HyperSpeed (Wired)",
+  "pid": "00c4",
+  "max_dpi": 26000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/6124/6124-1-en-v2.png"
+ },
+ "00c5": {
+  "class": "RazerDeathAdderV3HyperSpeedWireless",
+  "name": "Razer DeathAdder V3 HyperSpeed (Wireless)",
+  "pid": "00c5",
+  "max_dpi": 26000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/6124/6124-1-en-v2.png"
+ },
+ "00b6": {
+  "class": "RazerDeathAdderV3ProWired",
+  "name": "Razer DeathAdder V3 Pro (Wired)",
+  "pid": "00b6",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/6130/6130-1-en-v2.png"
+ },
+ "00c2": {
+  "class": "RazerDeathAdderV3ProWired_Alternate",
+  "name": "Razer DeathAdder V3 Pro (Wired)",
+  "pid": "00c2",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/6130/6130-1-en-v2.png"
+ },
+ "00b7": {
+  "class": "RazerDeathAdderV3ProWireless",
+  "name": "Razer DeathAdder V3 Pro (Wireless)",
+  "pid": "00b7",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/6130/6130-1-en-v2.png"
+ },
+ "00c3": {
+  "class": "RazerDeathAdderV3ProWireless_Alternate",
+  "name": "Razer DeathAdder V3 Pro (Wireless)",
+  "pid": "00c3",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/6130/6130-1-en-v2.png"
+ },
+ "00be": {
+  "class": "RazerDeathAdderV4ProWired",
+  "name": "Razer DeathAdder V4 Pro (Wired)",
+  "pid": "00be",
+  "max_dpi": 45000,
+  "poll_rates": [
+   125,
+   500,
+   1000,
+   2000,
+   4000,
+   8000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h01/hf3/9926511951902/deathadder-v4-pro-black-500x500.png"
+ },
+ "00bf": {
+  "class": "RazerDeathAdderV4ProWireless",
+  "name": "Razer DeathAdder V4 Pro (Wireless)",
+  "pid": "00bf",
+  "max_dpi": 45000,
+  "poll_rates": [
+   125,
+   500,
+   1000,
+   2000,
+   4000,
+   8000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/h01/hf3/9926511951902/deathadder-v4-pro-black-500x500.png"
+ },
+ "004c": {
+  "class": "RazerDiamondbackChroma",
+  "name": "Razer Diamondback Chroma",
+  "pid": "004c",
+  "max_dpi": 16000,
+  "poll_rates": [],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/613/613_diamondback.png"
+ },
+ "00b3": {
+  "class": "RazerHyperPollingWirelessDongle",
+  "name": "Razer HyperPolling Wireless Dongle",
+  "pid": "00b3",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000,
+   2000,
+   4000,
+   8000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/6141/6141-1-en-v1.png"
+ },
+ "002f": {
+  "class": "RazerImperator",
+  "name": "Razer Imperator 2012",
+  "pid": "002f",
+  "max_dpi": 6400,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/215/215_imperator.png"
+ },
+ "0059": {
+  "class": "RazerLanceheadWired",
+  "name": "Razer Lancehead (Wired)",
+  "pid": "0059",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1205/1205_lancehead.png"
+ },
+ "005a": {
+  "class": "RazerLanceheadWireless",
+  "name": "Razer Lancehead (Wireless)",
+  "pid": "005a",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1205/1205_lancehead.png"
+ },
+ "0060": {
+  "class": "RazerLanceheadTE",
+  "name": "Razer Lancehead Tournament Edition",
+  "pid": "0060",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1203/1206_lanceheadte.png"
+ },
+ "006f": {
+  "class": "RazerLanceheadWirelessReceiver",
+  "name": "Razer Lancehead Wireless (Receiver)",
+  "pid": "006f",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1205/1205_lancehead.png"
+ },
+ "0070": {
+  "class": "RazerLanceheadWirelessWired",
+  "name": "Razer Lancehead Wireless (Wired)",
+  "pid": "0070",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1205/1205_lancehead.png"
+ },
+ "0024": {
+  "class": "RazerMamba2012Wired",
+  "name": "Razer Mamba 2012 (Wired)",
+  "pid": "0024",
+  "max_dpi": 6400,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/192/192_mamba_2012.png"
+ },
+ "0025": {
+  "class": "RazerMamba2012Wireless",
+  "name": "Razer Mamba 2012 (Wireless)",
+  "pid": "0025",
+  "max_dpi": 6400,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/192/192_mamba_2012.png"
+ },
+ "0044": {
+  "class": "RazerMambaChromaWired",
+  "name": "Razer Mamba Chroma (Wired)",
+  "pid": "0044",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/609/609_mamba_500x500.png"
+ },
+ "0045": {
+  "class": "RazerMambaChromaWireless",
+  "name": "Razer Mamba Chroma (Wireless)",
+  "pid": "0045",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/609/609_mamba_500x500.png"
+ },
+ "006c": {
+  "class": "RazerMambaElite",
+  "name": "Razer Mamba Elite",
+  "pid": "006c",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1390/1390_mamba_elite.png"
+ },
+ "0046": {
+  "class": "RazerMambaTE",
+  "name": "Razer Mamba Tournament Edition",
+  "pid": "0046",
+  "max_dpi": 16000,
+  "poll_rates": [],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/606/606_mambate_500x500.png"
+ },
+ "0072": {
+  "class": "RazerMambaWirelessReceiver",
+  "name": "Razer Mamba Wireless (Receiver)",
+  "pid": "0072",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1404/1404_mamba_wireless.png"
+ },
+ "0073": {
+  "class": "RazerMambaWirelessWired",
+  "name": "Razer Mamba Wireless (Wired)",
+  "pid": "0073",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1404/1404_mamba_wireless.png"
+ },
+ "0015": {
+  "class": "RazerNaga",
+  "name": "Razer Naga",
+  "pid": "0015",
+  "max_dpi": 5600,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/products/40/razer-naga-molten-gallery-4.png"
+ },
+ "002e": {
+  "class": "RazerNaga2012",
+  "name": "Razer Naga 2012",
+  "pid": "002e",
+  "max_dpi": 5600,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/products/39/razer-naga-gallery-4.png"
+ },
+ "0040": {
+  "class": "RazerNaga2014",
+  "name": "Razer Naga 2014",
+  "pid": "0040",
+  "max_dpi": 8200,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/227/227_razer_naga_2014.png"
+ },
+ "0053": {
+  "class": "RazerNagaChroma",
+  "name": "Razer Naga Chroma",
+  "pid": "0053",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/636/636_naga_chroma.png"
+ },
+ "001f": {
+  "class": "RazerNagaEpic",
+  "name": "Razer Naga Epic",
+  "pid": "001f",
+  "max_dpi": 5600,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://hwimg.nl/Razer_naga-epic.png"
+ },
+ "003e": {
+  "class": "RazerNagaEpicChromaWired",
+  "name": "Razer Naga Epic Chroma (Wired)",
+  "pid": "003e",
+  "max_dpi": 8200,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/products/20776/rzrnagaepicchroma_04.png"
+ },
+ "003f": {
+  "class": "RazerNagaEpicChromaWireless",
+  "name": "Razer Naga Epic Chroma (Wireless)",
+  "pid": "003f",
+  "max_dpi": 8200,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/products/20776/rzrnagaepicchroma_04.png"
+ },
+ "0041": {
+  "class": "RazerNagaHex",
+  "name": "Razer Naga Hex",
+  "pid": "0041",
+  "max_dpi": 5600,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/23/23_naga_hex.png"
+ },
+ "0036": {
+  "class": "RazerNagaHexRed",
+  "name": "Razer Naga Hex (Red)",
+  "pid": "0036",
+  "max_dpi": 5600,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/products/12/razer-naga-hex-gallery-12.png"
+ },
+ "0050": {
+  "class": "RazerNagaHexV2",
+  "name": "Razer Naga Hex V2",
+  "pid": "0050",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/715/715_nagahexv2_500x500.png"
+ },
+ "008d": {
+  "class": "RazerNagaLeftHanded2020",
+  "name": "Razer Naga Left Handed Edition 2020",
+  "pid": "008d",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://rzrwarranty.s3.amazonaws.com/cee694cd7526df413008167b7566af310985321b20c57f3dc42e5cbd773f2417.png"
+ },
+ "008f": {
+  "class": "RazerNagaProWired",
+  "name": "Razer Naga Pro (Wired)",
+  "pid": "008f",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/hfd/ha6/9080569528350/razer-naga-pro-500x500.png"
+ },
+ "0090": {
+  "class": "RazerNagaProWireless",
+  "name": "Razer Naga Pro (Wireless)",
+  "pid": "0090",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container/hfd/ha6/9080569528350/razer-naga-pro-500x500.png"
+ },
+ "0067": {
+  "class": "RazerNagaTrinity",
+  "name": "Razer Naga Trinity",
+  "pid": "0067",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1251/1251_razer_naga_trinity.png"
+ },
+ "00b4": {
+  "class": "RazerNagaV2HyperSpeedReceiver",
+  "name": "Razer Naga V2 HyperSpeed (Receiver)",
+  "pid": "00b4",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://hybrismediaprod.blob.core.windows.net/sys-master-phoenix-images-container%2Fh4c%2Fh44%2F9451887460382%2Fnaga-v2-hyperspeed-500x500.png"
+ },
+ "00a7": {
+  "class": "RazerNagaV2ProWired",
+  "name": "Razer Naga V2 Pro (Wired)",
+  "pid": "00a7",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/6292/6292-1-en-v1.png"
+ },
+ "00a8": {
+  "class": "RazerNagaV2ProWireless",
+  "name": "Razer Naga V2 Pro (Wireless)",
+  "pid": "00a8",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/6292/6292-1-en-v1.png"
+ },
+ "0096": {
+  "class": "RazerNagaX",
+  "name": "Razer Naga X",
+  "pid": "0096",
+  "max_dpi": 18000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://dl.razerzone.com/src/3993-1-EN-V2.png"
+ },
+ "0048": {
+  "class": "RazerOrochiWired",
+  "name": "Razer Orochi (Wired)",
+  "pid": "0048",
+  "max_dpi": 8200,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
+ },
+ "0013": {
+  "class": "RazerOrochi2011",
+  "name": "Razer Orochi 2011",
+  "pid": "0013",
+  "max_dpi": 4000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
+ },
+ "0039": {
+  "class": "RazerOrochi2013",
+  "name": "Razer Orochi 2013",
+  "pid": "0039",
+  "max_dpi": 6400,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
+ },
+ "0095": {
+  "class": "RazerOrochiV2Bluetooth",
+  "name": "Razer Orochi V2 (Bluetooth)",
+  "pid": "0095",
+  "max_dpi": 18000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/OrochiV2-1-en-v1.png"
+ },
+ "0094": {
+  "class": "RazerOrochiV2Receiver",
+  "name": "Razer Orochi V2 (Receiver)",
+  "pid": "0094",
+  "max_dpi": 18000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/OrochiV2-1-en-v1.png"
+ },
+ "0032": {
+  "class": "RazerOuroboros",
+  "name": "Razer Ouroboros",
+  "pid": "0032",
+  "max_dpi": 8200,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/26/26_ouroboros.png"
+ },
+ "0077": {
+  "class": "RazerProClickReceiver",
+  "name": "Razer Pro Click (Receiver)",
+  "pid": "0077",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/3802-0-en-v1.png"
+ },
+ "0080": {
+  "class": "RazerProClickWired",
+  "name": "Razer Pro Click (Wired)",
+  "pid": "0080",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/3802-0-en-v1.png"
+ },
+ "009a": {
+  "class": "RazerProClickMiniReceiver",
+  "name": "Razer Pro Click Mini (Receiver)",
+  "pid": "009a",
+  "max_dpi": 12000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/5763/5763-1-en-v1.png"
+ },
+ "00d0": {
+  "class": "RazerProClickV2Wired",
+  "name": "Razer Pro Click V2 (Wired)",
+  "pid": "00d0",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   250,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/ha3/h76/9899953717278/pro-click-v2-black-500x500.png"
+ },
+ "00d1": {
+  "class": "RazerProClickV2Wireless",
+  "name": "Razer Pro Click V2 (Wireless)",
+  "pid": "00d1",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   250,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://medias-p1.phoenix.razer.com/sys-master-phoenix-images-container/ha3/h76/9899953717278/pro-click-v2-black-500x500.png"
+ },
+ "00c7": {
+  "class": "RazerProClickV2VerticalEditionWired",
+  "name": "Razer Pro Click V2 Vertical Edition (Wired)",
+  "pid": "00c7",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   250,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/15010/15010-1-en-v1.png"
+ },
+ "00c8": {
+  "class": "RazerProClickV2VerticalEditionWireless",
+  "name": "Razer Pro Click V2 Vertical Edition (Wireless)",
+  "pid": "00c8",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   250,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/15010/15010-1-en-v1.png"
+ },
+ "0034": {
+  "class": "RazerTaipan",
+  "name": "Razer Taipan",
+  "pid": "0034",
+  "max_dpi": 8200,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/19/19_taipan.png"
+ },
+ "0078": {
+  "class": "RazerViper",
+  "name": "Razer Viper",
+  "pid": "0078",
+  "max_dpi": 16000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1539/1539_viper.png"
+ },
+ "0091": {
+  "class": "RazerViper8KHz",
+  "name": "Razer Viper 8KHz",
+  "pid": "0091",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000,
+   2000,
+   4000,
+   8000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://dl.razerzone.com/Images/Viper%208KHz/Viper8khz.png"
+ },
+ "008a": {
+  "class": "RazerViperMini",
+  "name": "Razer Viper Mini",
+  "pid": "008a",
+  "max_dpi": 8500,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": false,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1634/vipermini.png"
+ },
+ "009e": {
+  "class": "RazerViperMiniSEWired",
+  "name": "Razer Viper Mini SE (Wired)",
+  "pid": "009e",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/9682/9682-1-en-v1.png"
+ },
+ "009f": {
+  "class": "RazerViperMiniSEWireless",
+  "name": "Razer Viper Mini SE (Wireless)",
+  "pid": "009f",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000,
+   2000,
+   4000,
+   8000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/9682/9682-1-en-v1.png"
+ },
+ "007a": {
+  "class": "RazerViperUltimateWired",
+  "name": "Razer Viper Ultimate (Wired)",
+  "pid": "007a",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1577/ee_photo.png"
+ },
+ "007b": {
+  "class": "RazerViperUltimateWireless",
+  "name": "Razer Viper Ultimate (Wireless)",
+  "pid": "007b",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1577/ee_photo.png"
+ },
+ "00a5": {
+  "class": "RazerViperV2ProWired",
+  "name": "Razer Viper V2 Pro (Wired)",
+  "pid": "00a5",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/6048-1-en-v10.png"
+ },
+ "00a6": {
+  "class": "RazerViperV2ProWireless",
+  "name": "Razer Viper V2 Pro (Wireless)",
+  "pid": "00a6",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src/6048-1-en-v10.png"
+ },
+ "00b8": {
+  "class": "RazerViperV3HyperSpeed",
+  "name": "Razer Viper V3 HyperSpeed",
+  "pid": "00b8",
+  "max_dpi": 30000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/13432/13432-1-en-v3.png"
+ },
+ "00c0": {
+  "class": "RazerViperV3ProWired",
+  "name": "Razer Viper V3 Pro (Wired)",
+  "pid": "00c0",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/14044/14044-1-en-v1.png"
+ },
+ "00c1": {
+  "class": "RazerViperV3ProWireless",
+  "name": "Razer Viper V3 Pro (Wireless)",
+  "pid": "00c1",
+  "max_dpi": 35000,
+  "poll_rates": [
+   125,
+   500,
+   1000,
+   2000,
+   4000,
+   8000
+  ],
+  "dpi_stages": true,
+  "dpi": true,
+  "battery": true,
+  "image": "https://dl.razerzone.com/src2/14044/14044-1-en-v1.png"
+ },
+ "0088": {
+  "class": "RazerBasiliskUltimateReceiver",
+  "name": "RazerBasiliskUltimateReceiver",
+  "pid": "0088",
+  "max_dpi": 20000,
+  "poll_rates": [
+   125,
+   500,
+   1000
+  ],
+  "dpi_stages": false,
+  "dpi": true,
+  "battery": true,
+  "image": "https://assets.razerzone.com/eeimages/support/products/1590/1590_basilisk_ultimate.png"
+ }
+}

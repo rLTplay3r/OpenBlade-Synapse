@@ -1,0 +1,1351 @@
+{
+ "_comment": "Factory defaults per product, researched from official Razer sources (master guides on dl.razerzone.com, mysupport.razer.com, razer.com). Built by tools/build_factory.py from tools/research/*.json. null = not documented.",
+ "Razer Abyssus": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 3500,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/Abyssus2014/Abyssus2014OMG-ENG.pdf"
+  ],
+  "notes": "2014 model: 3500 DPI optical, 1000 Hz, no DPI button; no factory stage list published."
+ },
+ "Razer Abyssus 1800": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 1800,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/Abyssus/Abyssus1800OMG-ENG.pdf"
+  ],
+  "notes": "1800 DPI, no DPI button, no factory stage list."
+ },
+ "Razer Abyssus 2000": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 2000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse/Abyssus2000-00000094-en.pdf"
+  ],
+  "notes": "2000 DPI, no DPI button, no factory stage list."
+ },
+ "Razer Abyssus Elite (D.Va Edition)": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 7200,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DVaRazerAbyssusElite-00000106-en.pdf"
+  ],
+  "notes": "7200 DPI, no DPI button, no factory stage list; Synapse 3 polling 500/1000 Hz."
+ },
+ "Razer Abyssus Essential": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 7200,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/AbyssusEssential-00000107-en.pdf"
+  ],
+  "notes": "7200 DPI, no DPI button, no factory stage list."
+ },
+ "Razer Abyssus V2": {
+  "dpi_stages": [
+   800,
+   1800,
+   2400,
+   3600,
+   5000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 5000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse/AbyssusV2-00000091-en.pdf"
+  ],
+  "notes": "'Default DPI stages are as follows: 800, 1800, 2400, 3600, and 5000'. Active stage not marked."
+ },
+ "Razer Atheris": {
+  "dpi_stages": [
+   800,
+   1800,
+   2400,
+   3600,
+   7200
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 7200,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse/Atheris-00000097-en.pdf",
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/Atheris-00000098-en.pdf"
+  ],
+  "notes": "Both English guides: 800, 1800, 2400, 3600, 7200. Active stage not marked."
+ },
+ "Razer Basilisk": {
+  "dpi_stages": [
+   800,
+   1800,
+   4500,
+   9000,
+   16000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse/Basilisk-00000100-en.pdf"
+  ],
+  "notes": "'Default DPI stages: 800, 1800, 4500, 9000, and 16000. The default DPI clutch sensitivity is 800.' Active stage not marked."
+ },
+ "Razer Basilisk Essential": {
+  "dpi_stages": [
+   800,
+   1800,
+   3600,
+   5400,
+   6400
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 6400,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/BasiliskEssential/RazerBasiliskEssential-zn-CN.pdf"
+  ],
+  "notes": "Official zh-CN guide (English 404): default stages 800, 1800, 3600, 5400, 6400; clutch 800."
+ },
+ "Razer Basilisk Mobile": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 18000,
+  "confidence": "medium",
+  "sources": [
+   "https://www.razer.com/mena-en/gaming-mice/razer-basilisk-mobile",
+   "https://dl.razerzone.com/master-guides/RazerSynapse4/BASILISKMOBILE-00000211-zh-CN.pdf"
+  ],
+  "notes": "Has DPI stages (up to 5) but no factory list found (English guide image-only). 18000 DPI from razer.com."
+ },
+ "Razer Basilisk Ultimate": {
+  "dpi_stages": [
+   800,
+   1800,
+   4000,
+   9000,
+   20000
+  ],
+  "default_dpi": 1800,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 20000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKULTIMATE-00000134-ja.pdf"
+  ],
+  "notes": "Official Japanese guide (English image-only): default stages 800/1800/4000/9000/20000, 1800 marked default."
+ },
+ "Razer Basilisk V2": {
+  "dpi_stages": [
+   800,
+   1800,
+   4000,
+   9000,
+   20000
+  ],
+  "default_dpi": 1800,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 20000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKV2-00000133-en.pdf",
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKV2-00000133-zh-CN.pdf"
+  ],
+  "notes": "EN spec list and zh-CN guide: 800/1800/4000/9000/20000 (EN layout page has a typo 3200/10000); 1800 (Default)."
+ },
+ "Razer Basilisk V3": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 26000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKV3-00000153-en.pdf"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200 and 6400'."
+ },
+ "Razer Basilisk V3 35K": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": null,
+  "max_dpi": 35000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKV3-00000203-ru.pdf",
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKV3-00000203-ja.pdf",
+   "https://mysupport.razer.com/app/answers/detail/a_id/14662/~/at-a-glance:-razer-basilisk-v3-35k-|-rz01-0523"
+  ],
+  "notes": "Official ru/ja/zh guides: 400, 800, 1600 (default), 3200, 6400. Max polling sources conflict (1000 vs 8000)."
+ },
+ "Razer Basilisk V3 Pro": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 8000,
+  "max_dpi": 30000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKV3PRO-00000170-en.pdf",
+   "https://www.razer.com/gaming-mice/razer-basilisk-v3-pro"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200, and 6400'. 1000 Hz native; 8000 Hz only with Mouse Dock Pro / HyperPolling dongle."
+ },
+ "Razer Basilisk V3 Pro 35K": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 8000,
+  "max_dpi": 35000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKV3PRO35K-00000204-en.pdf",
+   "https://www.razer.com/gaming-mice/razer-basilisk-v3-pro-35k"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200 and 6400'. 1000 Hz, up to 8000 Hz with Dock Pro / HyperPolling dongle. Phantom Green Edition: same mouse, colorway."
+ },
+ "Razer Basilisk V3 Pro 35K Phantom Green Edition": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 8000,
+  "max_dpi": 35000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKV3PRO35K-00000204-en.pdf",
+   "https://www.razer.com/gaming-mice/razer-basilisk-v3-pro-35k"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200 and 6400'. 1000 Hz, up to 8000 Hz with Dock Pro / HyperPolling dongle. Phantom Green Edition: same mouse, colorway."
+ },
+ "Razer Basilisk V3 X HyperSpeed": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 1000,
+  "max_dpi": 18000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKV3XHYPERSPEED-00000185-en.pdf",
+   "https://www.razer.com/gaming-mice/razer-basilisk-v3-x-hyperspeed"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200, and 6400'; 1000 Hz."
+ },
+ "Razer Basilisk X HyperSpeed": {
+  "dpi_stages": [
+   800,
+   1800,
+   3600,
+   7200,
+   16000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": null,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKXHYPERSPEED-00000131-en.pdf",
+   "https://www.razer.com/gaming-mice/razer-basilisk-x-hyperspeed"
+  ],
+  "notes": "Guide + razer.com FAQ: 800/1800/3600/7200/16000 (launch press release said 800/1800/4000/9000/16000). Active stage not marked."
+ },
+ "Razer Cobra": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 1000,
+  "max_dpi": 8500,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/COBRA-000000163-en.pdf",
+   "https://www.razer.com/gaming-mice/razer-cobra"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200, and 6400'; 1000 Hz."
+ },
+ "Razer Cobra Pro": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 8000,
+  "max_dpi": 30000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/COBRAPRO-00000175-en.pdf",
+   "https://www.razer.com/gaming-mice/razer-cobra-pro"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200, and 6400'. 1000 Hz native; guide says up to 4000 Hz, current razer.com 8000 Hz with Dock Pro / HyperPolling dongle."
+ },
+ "Razer DeathAdder 1800": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 1800,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/DA1800/DAOMG-ENG.pdf"
+  ],
+  "notes": "1800 DPI, up to 3 stages; factory values not documented."
+ },
+ "Razer DeathAdder 2000": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": null,
+  "max_dpi": null,
+  "confidence": "low",
+  "sources": [],
+  "notes": "No official guide or spec found."
+ },
+ "Razer DeathAdder 2013": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 6400,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/DA2013/DA2013OMG-ENG.pdf"
+  ],
+  "notes": "6400 DPI 4G optical; no dedicated DPI buttons; factory stages not documented."
+ },
+ "Razer DeathAdder 3.5G": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 3500,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/DABlackEditionOMG-ENG.pdf"
+  ],
+  "notes": "No onboard stages; driver DPI switcher presets 450/900/1800/3500."
+ },
+ "Razer DeathAdder 3.5G Black": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 3500,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/DABlackEditionOMG-ENG.pdf"
+  ],
+  "notes": "No onboard stages; driver DPI switcher presets 450/900/1800/3500."
+ },
+ "Razer DeathAdder 3500": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 3500,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/DA3500/DA3500OMG-ENG.pdf"
+  ],
+  "notes": "3500 DPI, up to 4 stages in Synapse 2; factory values not documented; no DPI buttons."
+ },
+ "Razer DeathAdder Chroma": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 10000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/DAChroma/DAChromaOMG-ENG.pdf",
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERCHROMA-00020067-en.pdf"
+  ],
+  "notes": "10000 DPI; no DPI buttons; factory stages not documented."
+ },
+ "Razer DeathAdder Elite": {
+  "dpi_stages": [
+   800,
+   1800,
+   4500,
+   9000,
+   16000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse/DeathAdderEliteSKTT1Edition-01300092-en.pdf"
+  ],
+  "notes": "'Default DPI stages are as follows: 800, 1800, 4500, 9000, and 16000'. Active stage not marked (unofficial forum: 1800)."
+ },
+ "Razer DeathAdder Essential": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 6400,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DeathAdderEssential-00000110-en.pdf"
+  ],
+  "notes": "Original 2018 model: 6400 DPI, 1000 Hz, no DPI button, no stage list."
+ },
+ "Razer DeathAdder Essential (2021)": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 6400,
+  "confidence": "medium",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DeathAdderEssential-00000152-en.pdf"
+  ],
+  "notes": "2021 guide: '400, 800, 1600 (default), 3200 and 6400'. Mapping of this guide to PID 0098 is by date."
+ },
+ "Razer DeathAdder Essential (White Edition)": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 6400,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DeathAdderEssential-00000110-en.pdf"
+  ],
+  "notes": "Original 2018 model: 6400 DPI, 1000 Hz, no DPI button, no stage list."
+ },
+ "Razer DeathAdder V2": {
+  "dpi_stages": [
+   800,
+   1800,
+   4000,
+   9000,
+   20000
+  ],
+  "default_dpi": 1800,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 20000,
+  "confidence": "medium",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERV2-00000132-en.pdf",
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERV2-00000132-ja.pdf"
+  ],
+  "notes": "Official sources conflict: EN/ja/zh-CN/ru layout page '800, 1800 (Default), 4000, 9000, 20000'; EN spec list 400/800/1600/3200/6400; zh-TW and mysupport snippet 400/800/1600/2400/3200. Chose the only statement that marks a default."
+ },
+ "Razer DeathAdder V2 Lite": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": null,
+  "max_dpi": null,
+  "confidence": "low",
+  "sources": [],
+  "notes": "No official guide or spec found."
+ },
+ "Razer DeathAdder V2 Mini": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 8500,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERV2MINI-000000140-en.pdf"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200 and 6400'."
+ },
+ "Razer DeathAdder V2 Pro": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 20000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERV2PRO-00000124-en.pdf"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200 and 6400'."
+ },
+ "Razer DeathAdder V2 X HyperSpeed": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 14000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERV2XHYPERSPEED-00000156-en.pdf"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200 and 6400'."
+ },
+ "Razer DeathAdder V3": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 8000,
+  "max_dpi": 30000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERV3-00000178-en.pdf",
+   "https://www.razer.com/gaming-mice/razer-deathadder-v3"
+  ],
+  "notes": "Master guide: stages 400, 800, 1600 (default), 3200, 6400; Synapse FAQ: default 1000 Hz, up to 8000 Hz."
+ },
+ "Razer DeathAdder V3 HyperSpeed": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 8000,
+  "max_dpi": 26000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERV3HYPERSPEED-00000196-en.pdf",
+   "https://www.razer.com/gaming-mice/razer-deathadder-v3-hyperspeed"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200, and 6400'. 1000 Hz with included dongle; 8000 Hz with HyperPolling dongle."
+ },
+ "Razer DeathAdder V3 Pro": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 8000,
+  "max_dpi": 30000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERV3PRO-00000182-en.pdf",
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/DEATHADDERV3PRO-00000194-en.pdf"
+  ],
+  "notes": "Both guides: '400, 800, 1600 (default), 3200, and 6400'. 1000 Hz included dongle, 8000 Hz HyperPolling dongle."
+ },
+ "Razer DeathAdder V4 Pro": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 8000,
+  "max_dpi": 45000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse4/DEATHADDERV4PRO-00000190-en.pdf",
+   "https://www.razer.com/mena-en/gaming-mice/razer-deathadder-v4-pro"
+  ],
+  "notes": "'400, 800, 1600 (default), 3200 and 6400'. Included dongle supports up to 8000 Hz."
+ },
+ "Razer Diamondback Chroma": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse/Diamondback-00000076-en.pdf"
+  ],
+  "notes": "16000 DPI 5G laser, up to 5 stages; factory values not documented."
+ },
+ "Razer Imperator 2012": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 6400,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse/Imperator-00000047-en.pdf"
+  ],
+  "notes": "6400 DPI, stage up/down buttons; factory values not documented."
+ },
+ "Razer Lancehead": {
+  "dpi_stages": [
+   800,
+   1800,
+   4500,
+   9000,
+   16000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/Lancehead-00000089-en.pdf"
+  ],
+  "notes": "'Default DPI stages are as follows: 800, 1800, 4500, 9000, and 16000.' Active stage not marked."
+ },
+ "Razer Lancehead Tournament Edition": {
+  "dpi_stages": [
+   800,
+   1800,
+   4500,
+   9000,
+   16000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/LanceheadTournamentEdition-00000096-en.pdf"
+  ],
+  "notes": "'Default DPI stages are as follows: 800, 1800, 4500, 9000, and 16000.' Active stage not marked."
+ },
+ "Razer Lancehead Wireless": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "medium",
+  "sources": [
+   "https://www.slashgear.com/ambidextrous-mouse-razer-lancehead-wireless-ramps-up-features-for-2019-16576994"
+  ],
+  "notes": "2019 refresh: 16000 DPI 5G optical, 1000 Hz. No master guide found; 2017 Lancehead guide (800/1800/4500/9000/16000) covers a different model, not inferred."
+ },
+ "Razer Mamba 2012": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 6400,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/Mamba2012/Mamba2012OMG-ENG.pdf"
+  ],
+  "notes": "6400 DPI, has 5 onboard stages (stage buttons) but no factory values documented."
+ },
+ "Razer Mamba Chroma": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/Mamba/MambaOMG-ENG.pdf"
+  ],
+  "notes": "16000 DPI 5G laser, stage up/down buttons; no factory stage values documented."
+ },
+ "Razer Mamba Elite": {
+  "dpi_stages": [
+   800,
+   1800,
+   4500,
+   9000,
+   16000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/MambaElite-00000108-en.pdf"
+  ],
+  "notes": "'Default DPI stages are as follows: 800, 1800, 4500, 9000, and 16000.' Active stage not marked."
+ },
+ "Razer Mamba Tournament Edition": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/MambaTE/MambaTEOMG-ENG.pdf",
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/MambaTournamentEdition-00000070-en.pdf"
+  ],
+  "notes": "16000 DPI 5G laser, stage buttons; no factory stage values documented."
+ },
+ "Razer Mamba Wireless": {
+  "dpi_stages": [
+   800,
+   1800,
+   4500,
+   9000,
+   16000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/MAMBAWIRELESS-00000115-en.pdf"
+  ],
+  "notes": "'Default DPI stages are as follows: 800, 1800, 4500, 9000, and 16000.' Active stage not marked."
+ },
+ "Razer Naga": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 5600,
+  "confidence": "high",
+  "sources": [
+   "https://www.razer.com/newsroom/product-news/get-imba-at-gamescom-2009",
+   "https://dl.razerzone.com/master-guides/Naga/NagaOMG-ENG.pdf"
+  ],
+  "notes": "5600 DPI 3.5G laser, no DPI buttons; no factory stages documented."
+ },
+ "Razer Naga 2012": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 5600,
+  "confidence": "high",
+  "sources": [
+   "https://www.razer.com/newsroom/product-news/the-razer-naga-has-just-levelled-up",
+   "https://dl.razerzone.com/master-guides/Naga2012/Naga2012OMG-ENG.pdf"
+  ],
+  "notes": "5600 DPI, no DPI buttons; no factory stages documented."
+ },
+ "Razer Naga 2014": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 8200,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/Naga2014/Naga2014OMG-ENG.pdf"
+  ],
+  "notes": "8200 DPI 4G laser, no DPI buttons; no factory stages documented."
+ },
+ "Razer Naga Chroma": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/NagaChroma/NagaChromaOMG-ENG.pdf"
+  ],
+  "notes": "16000 DPI, stage up/down buttons; no factory stage values documented."
+ },
+ "Razer Naga Epic": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 5600,
+  "confidence": "high",
+  "sources": [
+   "https://www.razer.com/newsroom/product-news/razer-launches-a-wireless-version-of-the-best-selling-razer-naga",
+   "https://dl.razerzone.com/master-guides/Naga%20Epic%20OMG/NagaEpicOMG-ENG.pdf"
+  ],
+  "notes": "5600 DPI, no DPI buttons; no factory stages documented."
+ },
+ "Razer Naga Epic Chroma": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 8200,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/NagaEpicChroma/NagaEpicChromaOMG-ENG.pdf"
+  ],
+  "notes": "8200 DPI 4G laser, no DPI buttons; no factory stages documented."
+ },
+ "Razer Naga Hex": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 5600,
+  "confidence": "medium",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/NagaHex/NagaHexOMG-ENG.pdf",
+   "https://dl.razerzone.com/master-guides/NagaHex/NagaHexRedOMG-ENG.pdf",
+   "https://www.newegg.com/p/N82E16826153087",
+   "https://www.eteknix.com/razer-naga-hex-gaming-mouse-review/3/?amp=1"
+  ],
+  "notes": "Official Synapse 2 guides (standard/2014 and Red) give no factory stage list or default DPI; up to 5 stages configurable. Polling options 125/500/1000 Hz, default not stated. 5600 max DPI from retailer/review."
+ },
+ "Razer Naga Hex (Red)": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 5600,
+  "confidence": "medium",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/NagaHex/NagaHexOMG-ENG.pdf",
+   "https://dl.razerzone.com/master-guides/NagaHex/NagaHexRedOMG-ENG.pdf",
+   "https://www.newegg.com/p/N82E16826153087",
+   "https://www.eteknix.com/razer-naga-hex-gaming-mouse-review/3/?amp=1"
+  ],
+  "notes": "Official Synapse 2 guides (standard/2014 and Red) give no factory stage list or default DPI; up to 5 stages configurable. Polling options 125/500/1000 Hz, default not stated. 5600 max DPI from retailer/review."
+ },
+ "Razer Naga Hex V2": {
+  "dpi_stages": [
+   800,
+   1800,
+   4500,
+   9000,
+   16000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/NagaHexv2/NagaHexV2-00000080-ENG.pdf"
+  ],
+  "notes": "Guide p7: 'Default DPI stages are as follows: 800, 1800, 4500, 9000, and 16000'. No stage marked default."
+ },
+ "Razer Naga Left Handed Edition 2020": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 20000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/NAGALEFT-HANDEDEDITION-00000141-en.pdf"
+  ],
+  "notes": "Guide p4: '400, 800, 1600 (default), 3200 and 6400'."
+ },
+ "Razer Naga Pro": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 20000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/NAGAPRO-00000143-en.pdf"
+  ],
+  "notes": "Guide p5: '400, 800, 1600 (default), 3200 and 6400'."
+ },
+ "Razer Naga Trinity": {
+  "dpi_stages": [
+   800,
+   1800,
+   4500,
+   9000,
+   16000
+  ],
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/NagaTrinity-00000103-en.pdf"
+  ],
+  "notes": "Guide p7: 'Default DPI stages are as follows: 800, 1800, 4500, 9000, and 16000'. No stage marked default."
+ },
+ "Razer Naga V2 HyperSpeed": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 30000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/NAGAV2HYPERSPEED-00000180-en.pdf"
+  ],
+  "notes": "Guide p4: '400, 800, 1600 (default), 3200, and 6400'."
+ },
+ "Razer Naga V2 Pro": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 30000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/NAGAV2PRO-00000167-en.pdf",
+   "https://techpowerup.com/review/razer-naga-v2-pro/7.html"
+  ],
+  "notes": "Guide p4: '400, 800, 1600 (default), 3200, and 6400'. No 4000 Hz HyperPolling (TechPowerUp)."
+ },
+ "Razer Naga X": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 18000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/NAGAX-00000150-en.pdf"
+  ],
+  "notes": "Guide p4: '400, 800, 1600 (default), 3200 and 6400'."
+ },
+ "Razer Orochi": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 8200,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/Orochi2016/Orochi2016OMG-ENG.pdf"
+  ],
+  "notes": "2015/2016 Chroma Orochi: 8200 DPI, 1000 Hz wired / 125 Hz wireless (fixed). Has stage buttons but guide gives no factory stage values."
+ },
+ "Razer Orochi 2011": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 4000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/Orochi/OrochiOMGPC-ENG.pdf"
+  ],
+  "notes": "4000 DPI (2000 wireless), 125 Hz in wireless mode. No factory stage values documented."
+ },
+ "Razer Orochi 2013": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 6400,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/Orochi2013/Orochi2013OMG-ENG.pdf"
+  ],
+  "notes": "6400 DPI, Bluetooth fixed 250 Hz. No factory stage values documented."
+ },
+ "Razer Orochi V2": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 18000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/OROCHIV2-00000148-en.pdf",
+   "https://dl.razerzone.com/master-guides/RazerSynapse4/OROCHIV2-00000224-en.pdf"
+  ],
+  "notes": "Both guides: '400, 800, 1600 (default), 3200 and 6400'."
+ },
+ "Razer Ouroboros": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 8200,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/Ouroboros/OuroborosOMG-ENG.pdf"
+  ],
+  "notes": "8200 DPI, 1000 Hz. No factory stage values or default DPI documented."
+ },
+ "Razer Pro Click": {
+  "dpi_stages": [
+   800,
+   1800,
+   3200,
+   5000,
+   10000
+  ],
+  "default_dpi": 1800,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "medium",
+  "sources": [
+   "https://www.manualslib.de/manual/1521863/Razer-Pro-Click.html?page=2",
+   "https://manualsnet.com/razer/pro-click"
+  ],
+  "notes": "Master guide mirrors: '800, 1800 (default), 3200, 5000, and 10000'; 1000 Hz."
+ },
+ "Razer Pro Click Mini": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 1000,
+  "max_dpi": 12000,
+  "confidence": "medium",
+  "sources": [
+   "https://gzhls.at/blob/ldb/4/5/d/c/aa1471e10fe444a1fc87991b70240ea0fe84.pdf"
+  ],
+  "notes": "Master guide mirror: 'DPI stages: 400 / 800 / 1600 (default) / 3200 / 6400', 12000 DPI, 1000 Hz."
+ },
+ "Razer Pro Click V2": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 30000,
+  "confidence": "medium",
+  "sources": [
+   "https://www.trovaprezzi.it/manuali/razer_pro_click_v2_nero.pdf",
+   "https://www.razer.com/productivity/razer-pro-click-v2/buy"
+  ],
+  "notes": "Master guide mirror: '400, 800, 1600 (default), 3200 and 6400'; razer.com 30000 max."
+ },
+ "Razer Pro Click V2 Vertical Edition": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 30000,
+  "confidence": "medium",
+  "sources": [
+   "https://www.regard.ru/api/site/files/goodspdf/download/12370",
+   "https://www.razer.com/au-en/productivity/razer-pro-click-v2-vertical-edition"
+  ],
+  "notes": "Master guide mirror stage table: 400 / 800 / 1600 (Default) / 3200 / 6400; max 1000 Hz wired/2.4G."
+ },
+ "Razer Taipan": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 1000,
+  "max_dpi": 8200,
+  "confidence": "medium",
+  "sources": [
+   "https://manualsnet.com/razer/taipan"
+  ],
+  "notes": "8200 DPI 4G laser, 1000 Hz; no factory stage list."
+ },
+ "Razer Viper": {
+  "dpi_stages": [
+   400,
+   800,
+   1800,
+   2400,
+   3200
+  ],
+  "default_dpi": 1800,
+  "default_poll_hz": 1000,
+  "max_poll_hz": 1000,
+  "max_dpi": 16000,
+  "confidence": "medium",
+  "sources": [
+   "https://down.yingjianzhijia.com/sms/%E6%AF%92%E8%9D%B0.pdf",
+   "https://www.manualslib.com/manual/3613586/Razer-Viper.html"
+  ],
+  "notes": "Official zh-CN master guide (mirror) DPI table: 400 / 800 / 1800 (default) / 2400 / 3200. 16000 DPI, 1000 Hz."
+ },
+ "Razer Viper 8KHz": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   2400,
+   3200
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": 8000,
+  "max_poll_hz": 8000,
+  "max_dpi": 20000,
+  "confidence": "medium",
+  "sources": [
+   "https://www.razer.com/gaming-mice/razer-viper-8khz",
+   "https://www.manualslib.tech/guide/767092/razer-viper-8k-hz-manual.html"
+  ],
+  "notes": "razer.com FAQ: polling '125/500/1000/2000/4000/8000 (default) Hz'. Guide copy: '400, 800, 1600 (default), 2400 and 3200'."
+ },
+ "Razer Viper Mini": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 8500,
+  "confidence": "medium",
+  "sources": [
+   "https://static.razer.ru/227568/Razer-Viper-Mini-Master-Guide-RUS.pdf",
+   "https://www.razer.com/gaming-mice/razer-viper-mini"
+  ],
+  "notes": "Russian master guide on static.razer.ru: 400, 800, 1600 (default), 3200, 6400; 8500 DPI."
+ },
+ "Razer Viper Mini SE": {
+  "dpi_stages": null,
+  "default_dpi": null,
+  "default_poll_hz": null,
+  "max_poll_hz": 8000,
+  "max_dpi": 30000,
+  "confidence": "medium",
+  "sources": [
+   "https://www.razer.com/gaming-mice/razer-viper-mini-signature-edition"
+  ],
+  "notes": "No factory stage list found. 8000 Hz with included HyperPolling dongle; Focus Pro 30K."
+ },
+ "Razer Viper Ultimate": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   2400,
+   3200
+  ],
+  "default_dpi": 800,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 20000,
+  "confidence": "high",
+  "sources": [
+   "https://www.razer.com/au-en/gaming-mice/razer-viper-ultimate",
+   "https://www.razer.com/eu-en/gaming-mice/razer-viper-ultimate"
+  ],
+  "notes": "razer.com FAQ: 'The factory DPI settings are set at 400, 800 (default), 1600, 2400 & 3200'."
+ },
+ "Razer Viper V2 Pro": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 8000,
+  "max_dpi": 30000,
+  "confidence": "high",
+  "sources": [
+   "https://www.razer.com/gaming-mice/razer-viper-v2-pro"
+  ],
+  "notes": "razer.com FAQ: 'The factory DPI settings are set at 400, 800, 1600 (default), 3200, and 6400.' 8000 Hz only with HyperPolling dongle."
+ },
+ "Razer Viper V3 HyperSpeed": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 8000,
+  "max_dpi": 30000,
+  "confidence": "medium",
+  "sources": [
+   "https://cdn.teufelaudio.com/products/Razer/Viper%20V3/VIPERV3HYPERSPEED-00000184-en",
+   "https://www.razer.com/gaming-mice/razer-viper-v3-hyperspeed/buy"
+  ],
+  "notes": "Master guide mirror: '400, 800, 1600 (default), 3200, and 6400'. 1000 Hz included dongle, 8000 Hz with HyperPolling dongle."
+ },
+ "Razer Viper V3 Pro": {
+  "dpi_stages": [
+   400,
+   800,
+   1600,
+   3200,
+   6400
+  ],
+  "default_dpi": 1600,
+  "default_poll_hz": null,
+  "max_poll_hz": 8000,
+  "max_dpi": 35000,
+  "confidence": "high",
+  "sources": [
+   "https://www.razer.com/au-en/gaming-mice/razer-viper-v3-pro"
+  ],
+  "notes": "razer.com FAQ: 'The factory DPI settings are set at 400, 800, 1600 (default), 3200, and 6400.' Up to 8000 Hz with included HyperPolling dongle."
+ },
+ "RazerBasiliskUltimateReceiver": {
+  "dpi_stages": [
+   800,
+   1800,
+   4000,
+   9000,
+   20000
+  ],
+  "default_dpi": 1800,
+  "default_poll_hz": null,
+  "max_poll_hz": 1000,
+  "max_dpi": 20000,
+  "confidence": "high",
+  "sources": [
+   "https://dl.razerzone.com/master-guides/RazerSynapse3/BASILISKULTIMATE-00000134-ja.pdf"
+  ],
+  "notes": "Official Japanese guide (English image-only): default stages 800/1800/4000/9000/20000, 1800 marked default."
+ }
+}

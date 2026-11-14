@@ -1,0 +1,152 @@
+<p align="center">
+  <img src="app/assets/logo-full.png" alt="OpenBlade" width="420">
+</p>
+
+<h1 align="center">OpenBlade-Synapse</h1>
+
+<p align="center">
+  A Razer Synapse–style configurator for Razer mice on Linux, built on top of <a href="https://openrazer.github.io/">OpenRazer</a>.<br>
+  DPI, polling rate, profiles, button remapping and macros – in a neon UI, written in Rust.
+</p>
+
+<p align="center">
+  <a href="https://github.com/rLTplay3r/OpenBlade-Synapse/releases/latest"><b>Download</b></a> ·
+  <a href="#install">Install</a> ·
+  <a href="#build-from-source">Build from source</a> ·
+  <a href="#how-it-works">How it works</a>
+</p>
+
+![OpenBlade-Synapse](docs/screenshots/main.png)
+
+> **Unofficial.** OpenBlade-Synapse is not affiliated with, endorsed by or a product of Razer Inc.
+> “Razer”, “Synapse” and product names are trademarks of Razer Inc.
+
+## Features
+
+| | |
+|---|---|
+| **All OpenRazer mice** | 86 models / 113 USB variants – every mouse [OpenRazer supports](https://openrazer.github.io/#devices). Product images, max DPI and settable polling rates come from OpenRazer. |
+| **Polling rate** | Exactly the rates your mouse supports (125 – 8000 Hz). |
+| **Sensitivity stages** | The model's **factory DPI stages**, researched per model from official Razer sources (master guides, razer.com, Razer support). Click to switch; the DPI button under the mouse keeps working. |
+| **Custom sensitivity** | One free DPI value (100 – max DPI) instead of the stages, with a slider or typed in. |
+| **Profiles** | *Default* (factory settings) + your own profiles; switch from the window or the tray. Reset a profile or everything to factory values. |
+| **Programmable buttons** | Right / middle / back / forward → another mouse button, a key or shortcut, a macro, DPI up/down/cycle, next profile, scroll up/down, or disabled. |
+| **Macros** | Record from the keyboard (with delays), insert and edit steps, play once / while held / toggle, import & export (JSON). |
+| **Tray** | Profile, DPI stage / custom sensitivity and polling rate right from the system tray. |
+| **9 languages** | English, Slovenčina, Čeština, Polski, Deutsch, Español, Русский, 中文, 日本語 – switch live in Settings. |
+| **Lightweight** | Native Rust. When the window is closed only a small service stays running (~8 MB RAM, 0 % CPU idle). |
+
+<p align="center">
+  <img src="docs/screenshots/performance.png" width="49%" alt="Profiles and button mapping">
+  <img src="docs/screenshots/button-assign.png" width="49%" alt="Assign a function to a button">
+</p>
+<p align="center">
+  <img src="docs/screenshots/macros.png" width="70%" alt="Macro editor">
+</p>
+
+## Install
+
+### 1. OpenRazer (the driver)
+
+OpenBlade-Synapse talks to the OpenRazer daemon, so install OpenRazer first:
+[openrazer.github.io/#download](https://openrazer.github.io/#download) and make sure your user is in the `plugdev` group.
+On **Fedora** you can use [`install-openrazer.sh`](install-openrazer.sh) (it also handles Secure Boot module signing).
+
+### 2. OpenBlade-Synapse
+
+1. Download `OpenBlade-Synapse-<version>-linux-x86_64.tar.gz` from [**Releases**](https://github.com/rLTplay3r/OpenBlade-Synapse/releases/latest).
+2. Extract it anywhere (e.g. `~/Applications`).
+3. Run `install.sh` in the extracted folder once – it adds **OpenBlade-Synapse** to your application menu
+   (no root needed; the program stays in that folder). Or just double-click `OpenBlade-Synapse`.
+
+`uninstall.sh` removes the menu and autostart entries; delete the folder to remove the program.
+Settings live in `~/.config/openblade-synapse/`.
+
+**Requirements of the prebuilt release:** x86_64, glibc ≥ 2.39, Qt 6 with Qt Quick
+(built and tested with **Qt 6.11** on Fedora 45 / KDE Plasma). Packages:
+Fedora `qt6-qtdeclarative`, Arch `qt6-declarative`, Debian/Ubuntu `qml6-module-qtquick qml6-module-qtquick-controls
+qml6-module-qtquick-dialogs qml6-module-qtquick-effects qml6-module-qtquick-shapes qml6-module-qtquick-layouts`.
+The tray icon uses StatusNotifierItem (works out of the box on KDE; on GNOME you need the AppIndicator extension).
+If the prebuilt binary does not run on your distribution, [build it from source](#build-from-source).
+
+## Build from source
+
+You need Rust, a C++ compiler and the Qt 6 development files (the window uses [CXX-Qt](https://github.com/KDAB/cxx-qt)).
+
+| Distribution | Packages |
+|---|---|
+| Fedora | `sudo dnf install gcc-c++ qt6-qtbase-devel qt6-qtdeclarative-devel` (or run [`install-rust-deps.sh`](install-rust-deps.sh)) |
+| Arch | `sudo pacman -S base-devel qt6-base qt6-declarative` |
+| Debian / Ubuntu | `sudo apt install build-essential qt6-base-dev qt6-declarative-dev` |
+| Rust | [rustup.rs](https://rustup.rs) |
+
+```bash
+git clone https://github.com/rLTplay3r/OpenBlade-Synapse.git
+cd OpenBlade-Synapse
+./build.sh             # -> dist/OpenBlade-Synapse/ (self-contained folder)
+./build.sh --install   # ... and add it to the application menu
+```
+
+Tests: `cd rust && cargo test`.
+
+## How it works
+
+```
+ ┌──────────────────────────────┐  Unix socket   ┌───────────────────────────────────────┐
+ │ openblade-synapse-gui        │  (JSON lines)  │ OpenBlade-Synapse  (daemon, no Qt)    │
+ │ Rust + Qt Quick (CXX-Qt)     │ ◄────────────► │ profiles · tray (StatusNotifierItem)  │
+ │ app/qml – the UI             │                │ button remapping + macros             │
+ │ runs only while it is open   │                │ always running, ~8 MB                 │
+ └──────────────────────────────┘                └──────────────┬────────────────────────┘
+                                                                │ D-Bus (org.razer)
+                                                 ┌──────────────▼────────────────────────┐
+                                                 │ OpenRazer daemon + kernel driver      │
+                                                 └───────────────────────────────────────┘
+```
+
+- **`OpenBlade-Synapse`** is what you start. It is a single instance: starting it again just opens the window.
+  It owns the settings, talks to the OpenRazer daemon over D-Bus and shows the tray icon.
+- **`openblade-synapse-gui`** is the window. Closing it ends the process – nothing of the UI stays in memory.
+- **Button remapping:** only when the active profile changes a button, the daemon grabs the mouse (`EVIOCGRAB`) and
+  forwards every event through a virtual mouse (`/dev/uinput`) with the same name, so your desktop's pointer settings
+  still apply. With no remapped buttons the mouse is never grabbed. The left button cannot be remapped (so you never
+  lose clicking). The DPI button under the mouse is handled by the mouse firmware.
+- **Mouse database** (`app/devices/`): `openrazer_mice.json` is generated from OpenRazer
+  ([`tools/extract_openrazer_mice.py`](tools/extract_openrazer_mice.py)); `factory.json` holds factory DPI stages and
+  defaults with their sources (built from [`tools/research/`](tools/research) by
+  [`tools/build_factory.py`](tools/build_factory.py)). Where Razer never published a model's stages, the stages the
+  mouse reports are used; an undocumented default stage is shown with “?”.
+- Product images are downloaded on first use from Razer's CDN (the same URLs OpenRazer uses) and cached in
+  `~/.cache/openblade-synapse`.
+
+### Repository layout
+
+| Path | |
+|---|---|
+| `rust/obcore` | shared code: key names, mouse database, translations |
+| `rust/daemon` | `OpenBlade-Synapse` – the service |
+| `rust/gui` | `openblade-synapse-gui` – the window (Rust + Qt) |
+| `app/qml`, `app/qml-rust` | the QML UI and its binding to the daemon |
+| `app/i18n` | translations (one JSON per language, English is the fallback) |
+| `app/devices`, `app/assets` | mouse database, images, fonts |
+| `tools/` | maintenance scripts for the mouse database and artwork (Python) |
+
+## Known limitations
+
+- Only mice for now (no keyboards, headsets or mouse mats).
+- Button callout positions are exact for the DeathAdder V3; other mice use a generic layout.
+- Naga side keypads are not remappable (only left / right / middle / back / forward).
+- Higher polling rates that need a separately sold HyperPolling dongle are only offered where OpenRazer can set them.
+- Tested on Fedora 45, KDE Plasma (Wayland) with a Razer DeathAdder V3; other mice are supported through OpenRazer but
+  not tested on real hardware by the authors.
+
+## Credits
+
+- [OpenRazer](https://openrazer.github.io/) – the driver and daemon that make this possible.
+- [CXX-Qt](https://github.com/KDAB/cxx-qt), [zbus](https://github.com/dbus2/zbus), [ksni](https://github.com/iovxw/ksni).
+- Fonts: [Saira Semi Condensed](https://fonts.google.com/specimen/Saira+Semi+Condensed) and
+  [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) (SIL Open Font License).
+
+## License
+
+[MIT](LICENSE) · 2026 · LT ([rLTplay3r](https://github.com/rLTplay3r)) & Claude

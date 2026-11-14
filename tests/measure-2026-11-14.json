@@ -1,0 +1,58 @@
+{
+ "sizes": {
+  "python_code_kb": 225.3,
+  "rust_binaries_kb": 6090.5,
+  "rust_daemon_kb": 4595.0,
+  "rust_gui_kb": 1495.5,
+  "pyside6_package_mb": 64.2,
+  "shared_qml_assets_kb": 2137.4
+ },
+ "remap_bench": {
+  "python": {
+   "impl": "python",
+   "reports": 200000,
+   "cpu_s": 0.2105,
+   "wall_s": 0.2754,
+   "us_per_report": 1.053
+  },
+  "rust": {
+   "impl": "rust",
+   "reports": 200000,
+   "cpu_s": 0.0141,
+   "wall_s": 0.0141,
+   "us_per_report": 0.071
+  }
+ },
+ "python": {
+  "window_mem": {
+   "rss": 267.5,
+   "pss": 150.7
+  },
+  "window_cpu_pct": 0.067,
+  "startup_s": 0.308,
+  "open_from_tray_s": 0.0,
+  "tray_mem": {
+   "rss": 230.0,
+   "pss": 125.1
+  },
+  "tray_cpu_pct": 0.033
+ },
+ "rust": {
+  "window_mem": {
+   "rss": 209.4,
+   "pss": 95.7
+  },
+  "window_mem_gui": {
+   "rss": 200.9,
+   "pss": 89.3
+  },
+  "window_cpu_pct": 0.067,
+  "tray_mem": {
+   "rss": 8.5,
+   "pss": 6.4
+  },
+  "tray_cpu_pct": 0.0,
+  "startup_s": 0.218,
+  "open_from_tray_s": 0.169
+ }
+}

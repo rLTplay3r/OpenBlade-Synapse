@@ -1,0 +1,12 @@
+# build output
+rust/target/
+dist/
+release/
+# local-only tools (not published)
+builder/
+OpenBlade-Builder
+tools/_out/
+# local design sources
+Neon Green Gaming Mouse Dashboard.png
+__pycache__/
+*.pyc
