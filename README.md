@@ -46,11 +46,76 @@
 
 ## Install
 
-### 1. OpenRazer (the driver)
+### 1. OpenRazer + dependencies (copy & paste for your distribution)
 
-OpenBlade-Synapse talks to the OpenRazer daemon, so install OpenRazer first:
-[openrazer.github.io/#download](https://openrazer.github.io/#download) and make sure your user is in the `plugdev` group.
-On **Fedora** you can use [`install-openrazer.sh`](install-openrazer.sh) (it also handles Secure Boot module signing).
+One block per distribution: it installs the **OpenRazer** driver and daemon, the **Qt 6 / Qt Quick** libraries the
+window needs, and adds you to the `plugdev` group. OpenRazer commands are taken from
+[openrazer.github.io](https://openrazer.github.io/#download). **Reboot afterwards** (driver + group take effect).
+
+<details open>
+<summary><b>Fedora / Nobara</b> (41 and newer)</summary>
+
+```bash
+sudo dnf install -y kernel-devel qt6-qtdeclarative && \
+sudo dnf config-manager addrepo --from-repofile=https://openrazer.github.io/hardware:razer.repo && \
+sudo dnf install -y openrazer-meta && \
+sudo gpasswd -a $USER plugdev
+```
+With **Secure Boot** enabled, use [`install-openrazer.sh`](install-openrazer.sh) instead – it also enrolls the module signing key.
+</details>
+
+<details>
+<summary><b>Arch Linux / Manjaro / EndeavourOS</b></summary>
+
+```bash
+sudo pacman -S --needed linux-headers openrazer-daemon qt6-declarative && \
+sudo gpasswd -a $USER plugdev
+```
+Use the headers package matching your kernel (`linux-lts-headers`, `linux-zen-headers`, …).
+</details>
+
+<details>
+<summary><b>Ubuntu / Kubuntu / Linux Mint / Pop!_OS / Zorin / elementary</b> (25.04 and newer)</summary>
+
+```bash
+sudo add-apt-repository -y ppa:openrazer/stable && sudo apt update && \
+sudo apt install -y openrazer-meta qml6-module-qtquick qml6-module-qtquick-controls qml6-module-qtquick-dialogs \
+  qml6-module-qtquick-effects qml6-module-qtquick-shapes qml6-module-qtquick-layouts qml6-module-qtquick-window \
+  qml6-module-qtquick-templates qml6-module-qtqml-workerscript && \
+sudo gpasswd -a $USER plugdev
+```
+Ubuntu **24.04 LTS** ships Qt 6.4, which is too old (Qt ≥ 6.6 is needed) – OpenRazer works there, OpenBlade-Synapse does not yet.
+</details>
+
+<details>
+<summary><b>Debian</b> (13 “trixie” and newer)</summary>
+
+```bash
+sudo apt install -y openrazer-meta qml6-module-qtquick qml6-module-qtquick-controls qml6-module-qtquick-dialogs \
+  qml6-module-qtquick-effects qml6-module-qtquick-shapes qml6-module-qtquick-layouts qml6-module-qtquick-window \
+  qml6-module-qtquick-templates qml6-module-qtqml-workerscript && \
+sudo gpasswd -a $USER plugdev
+```
+</details>
+
+<details>
+<summary><b>openSUSE Tumbleweed</b></summary>
+
+```bash
+sudo zypper addrepo https://download.opensuse.org/repositories/hardware:razer/openSUSE_Tumbleweed/hardware:razer.repo && \
+sudo zypper refresh && sudo zypper install openrazer-meta qt6-declarative-imports && \
+sudo systemctl enable --now dkms.service && \
+sudo gpasswd -a $USER plugdev
+```
+</details>
+
+<details>
+<summary>Other distributions</summary>
+
+Install OpenRazer as described on [openrazer.github.io](https://openrazer.github.io/#download)
+(Gentoo, NixOS, Solus, Void, Alpine, …) plus your distribution's Qt 6 Qt Quick (QML) packages, version 6.6 or newer.
+On NixOS the group is `openrazer` instead of `plugdev`.
+</details>
 
 ### 2. OpenBlade-Synapse
 
@@ -62,11 +127,9 @@ On **Fedora** you can use [`install-openrazer.sh`](install-openrazer.sh) (it als
 `uninstall.sh` removes the menu and autostart entries; delete the folder to remove the program.
 Settings live in `~/.config/openblade-synapse/`.
 
-**Requirements of the prebuilt release:** x86_64, glibc ≥ 2.39, Qt 6 with Qt Quick
-(built and tested with **Qt 6.11** on Fedora 45 / KDE Plasma). Packages:
-Fedora `qt6-qtdeclarative`, Arch `qt6-declarative`, Debian/Ubuntu `qml6-module-qtquick qml6-module-qtquick-controls
-qml6-module-qtquick-dialogs qml6-module-qtquick-effects qml6-module-qtquick-shapes qml6-module-qtquick-layouts`.
-The tray icon uses StatusNotifierItem (works out of the box on KDE; on GNOME you need the AppIndicator extension).
+**Requirements of the prebuilt release:** x86_64, glibc ≥ 2.39 and Qt ≥ 6.6 with Qt Quick (the packages above).
+It is built and tested with **Qt 6.11** on Fedora 45 / KDE Plasma; rolling distributions (Arch, Tumbleweed) and current
+Fedora match that best. The tray icon uses StatusNotifierItem (works out of the box on KDE; on GNOME you need the AppIndicator extension).
 If the prebuilt binary does not run on your distribution, [build it from source](#build-from-source).
 
 ## Build from source
