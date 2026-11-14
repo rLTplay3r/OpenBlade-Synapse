@@ -201,7 +201,7 @@
   "b_step_build": "编译（Rust + Qt）",
   "b_step_bundle": "组装程序文件夹",
   "b_step_install": "添加到应用菜单",
-  "b_install_toggle": "将 OpenBlade-Synapse 和构建器添加到应用菜单",
+  "b_install_toggle": "添加到应用程序菜单",
   "b_ready": "可以开始构建。",
   "b_working": "正在构建…",
   "b_compiling": "正在编译 %1 / %2…",
@@ -211,5 +211,10 @@
   "b_failed_detail": "错误：%1",
   "b_missing": "缺少工具：%1。请运行一次 install-rust-deps.sh（需要输入密码）。",
   "b_running_old": "完成。OpenBlade-Synapse 仍在运行旧版本——请点击“重新启动”。",
+  "b_step_appimage": "构建 AppImage（在容器中）",
+  "b_appimage_toggle": "同时构建 AppImage（podman / docker）",
+  "b_appimage_phase": "AppImage：%1",
+  "b_done_appimage": "完成，用时 %1 秒。AppImage：dist/%2",
+  "b_appimage_engine": "构建 AppImage 需要 podman 或 docker – 例如 sudo dnf install podman",
   "b_log": "日志"
 }

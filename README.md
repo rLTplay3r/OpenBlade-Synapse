@@ -48,9 +48,10 @@
 
 ### 1. OpenRazer + dependencies (copy & paste for your distribution)
 
-One block per distribution: it installs the **OpenRazer** driver and daemon, the **Qt 6 / Qt Quick** libraries the
-window needs, and adds you to the `plugdev` group. OpenRazer commands are taken from
-[openrazer.github.io](https://openrazer.github.io/#download). **Reboot afterwards** (driver + group take effect).
+One block per distribution. It installs the **OpenRazer** driver and daemon and the **Qt 6 / Qt Quick** libraries the
+window needs, allows button remapping (access to `/dev/uinput` for the logged-in user – the same rule Steam and
+KDE Connect use) and adds you to the `plugdev` group. OpenRazer commands are taken from
+[openrazer.github.io](https://openrazer.github.io/#download). **Reboot afterwards** (driver, group and rule take effect).
 
 <details open>
 <summary><b>Fedora / Nobara</b> (41 and newer)</summary>
@@ -59,9 +60,11 @@ window needs, and adds you to the `plugdev` group. OpenRazer commands are taken 
 sudo dnf install -y kernel-devel qt6-qtdeclarative && \
 sudo dnf config-manager addrepo --from-repofile=https://openrazer.github.io/hardware:razer.repo && \
 sudo dnf install -y openrazer-meta && \
+echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
 sudo gpasswd -a $USER plugdev
 ```
-With **Secure Boot** enabled, use [`install-openrazer.sh`](install-openrazer.sh) instead – it also enrolls the module signing key.
+With **Secure Boot** enabled, run [`install-openrazer.sh`](install-openrazer.sh) first – it also enrolls the module
+signing key – and then this block.
 </details>
 
 <details>
@@ -69,22 +72,30 @@ With **Secure Boot** enabled, use [`install-openrazer.sh`](install-openrazer.sh)
 
 ```bash
 sudo pacman -S --needed linux-headers openrazer-daemon qt6-declarative && \
+echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
 sudo gpasswd -a $USER plugdev
 ```
 Use the headers package matching your kernel (`linux-lts-headers`, `linux-zen-headers`, …).
 </details>
 
 <details>
-<summary><b>Ubuntu / Kubuntu / Linux Mint / Pop!_OS / Zorin / elementary</b> (25.04 and newer)</summary>
+<summary><b>Ubuntu / Kubuntu / Linux Mint / Pop!_OS / Zorin / elementary</b></summary>
 
 ```bash
 sudo add-apt-repository -y ppa:openrazer/stable && sudo apt update && \
-sudo apt install -y openrazer-meta qml6-module-qtquick qml6-module-qtquick-controls qml6-module-qtquick-dialogs \
-  qml6-module-qtquick-effects qml6-module-qtquick-shapes qml6-module-qtquick-layouts qml6-module-qtquick-window \
-  qml6-module-qtquick-templates qml6-module-qtqml-workerscript && \
+sudo apt install -y openrazer-meta && \
+echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
 sudo gpasswd -a $USER plugdev
 ```
-Ubuntu **24.04 LTS** ships Qt 6.4, which is too old (Qt ≥ 6.6 is needed) – OpenRazer works there, OpenBlade-Synapse does not yet.
+Ubuntu **25.04 and newer** – also the Qt libraries for the prebuilt folder:
+```bash
+sudo apt install -y qml6-module-qtquick qml6-module-qtquick-controls qml6-module-qtquick-dialogs \
+  qml6-module-qtquick-effects qml6-module-qtquick-shapes qml6-module-qtquick-layouts qml6-module-qtquick-window \
+  qml6-module-qtquick-templates qml6-module-qtqml-workerscript
+```
+Ubuntu **22.04 / 24.04** and the distributions based on them (Linux Mint 21/22, Pop!_OS 22.04/24.04, Zorin 17,
+elementary 7/8) ship Qt 6.2 / 6.4, which is too old for the prebuilt folder (Qt ≥ 6.6 is needed).
+Use the [AppImage](#appimage) there – it brings its own Qt.
 </details>
 
 <details>
@@ -94,8 +105,10 @@ Ubuntu **24.04 LTS** ships Qt 6.4, which is too old (Qt ≥ 6.6 is needed) – O
 sudo apt install -y openrazer-meta qml6-module-qtquick qml6-module-qtquick-controls qml6-module-qtquick-dialogs \
   qml6-module-qtquick-effects qml6-module-qtquick-shapes qml6-module-qtquick-layouts qml6-module-qtquick-window \
   qml6-module-qtquick-templates qml6-module-qtqml-workerscript && \
+echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
 sudo gpasswd -a $USER plugdev
 ```
+Debian 12 has Qt 6.4 – use the [AppImage](#appimage).
 </details>
 
 <details>
@@ -105,6 +118,7 @@ sudo gpasswd -a $USER plugdev
 sudo zypper addrepo https://download.opensuse.org/repositories/hardware:razer/openSUSE_Tumbleweed/hardware:razer.repo && \
 sudo zypper refresh && sudo zypper install openrazer-meta qt6-declarative-imports && \
 sudo systemctl enable --now dkms.service && \
+echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
 sudo gpasswd -a $USER plugdev
 ```
 </details>
@@ -113,7 +127,8 @@ sudo gpasswd -a $USER plugdev
 <summary>Other distributions</summary>
 
 Install OpenRazer as described on [openrazer.github.io](https://openrazer.github.io/#download)
-(Gentoo, NixOS, Solus, Void, Alpine, …) plus your distribution's Qt 6 Qt Quick (QML) packages, version 6.6 or newer.
+(Gentoo, NixOS, Solus, Void, Alpine, …) plus your distribution's Qt 6 Qt Quick (QML) packages, version 6.6 or newer
+(or use the [AppImage](#appimage)). For button remapping add the `uinput` rule from the blocks above.
 On NixOS the group is `openrazer` instead of `plugdev`.
 </details>
 
@@ -127,10 +142,24 @@ On NixOS the group is `openrazer` instead of `plugdev`.
 `uninstall.sh` removes the menu and autostart entries; delete the folder to remove the program.
 Settings live in `~/.config/openblade-synapse/`.
 
-**Requirements of the prebuilt release:** x86_64, glibc ≥ 2.39 and Qt ≥ 6.6 with Qt Quick (the packages above).
+**Requirements of the prebuilt folder:** x86_64, glibc ≥ 2.39 and Qt ≥ 6.6 with Qt Quick (the packages above).
 It is built and tested with **Qt 6.11** on Fedora 45 / KDE Plasma; rolling distributions (Arch, Tumbleweed) and current
 Fedora match that best. The tray icon uses StatusNotifierItem (works out of the box on KDE; on GNOME you need the AppIndicator extension).
-If the prebuilt binary does not run on your distribution, [build it from source](#build-from-source).
+If the prebuilt folder does not run on your distribution, use the [AppImage](#appimage) or [build it from source](#build-from-source).
+
+### AppImage
+
+A single file that brings its own Qt 6.11 and runs on older distributions too (glibc ≥ 2.35: Ubuntu 22.04+,
+Linux Mint 21+, Debian 12+, …). OpenRazer still has to be installed (step 1) – it is a kernel driver.
+Download `OpenBlade-Synapse-<version>-x86_64.AppImage` from [**Releases**](https://github.com/rLTplay3r/OpenBlade-Synapse/releases/latest),
+`chmod +x OpenBlade-Synapse-*.AppImage` (or *Properties → Executable*), then double-click it. On its first start it adds
+itself to the application menu (unless a menu entry of the folder installation exists).
+
+If a release has no AppImage yet, build it yourself – you need **podman** or **docker**; the build runs in an Ubuntu 22.04 container
+([`packaging/appimage/`](packaging/appimage)), the first run downloads the build environment (a few GB):
+```bash
+packaging/appimage/make-appimage.sh   # -> dist/OpenBlade-Synapse-v<version>-x86_64.AppImage
+```
 
 ## Build from source
 
@@ -192,6 +221,7 @@ Tests: `cd rust && cargo test`.
 | `app/qml`, `app/qml-rust` | the QML UI and its binding to the daemon |
 | `app/i18n` | translations (one JSON per language, English is the fallback) |
 | `app/devices`, `app/assets` | mouse database, images, fonts |
+| `packaging/` | `install.sh` / `uninstall.sh` of the release folder, the AppImage recipe |
 | `tools/` | maintenance scripts for the mouse database and artwork (Python) |
 
 ## Known limitations

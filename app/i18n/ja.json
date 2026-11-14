@@ -201,7 +201,7 @@
   "b_step_build": "コンパイル（Rust + Qt）",
   "b_step_bundle": "プログラムフォルダーの作成",
   "b_step_install": "アプリメニューに追加",
-  "b_install_toggle": "OpenBlade-Synapse とビルダーをアプリメニューに追加",
+  "b_install_toggle": "アプリケーションメニューに追加",
   "b_ready": "ビルドの準備ができました。",
   "b_working": "ビルド中…",
   "b_compiling": "コンパイル中 %1 / %2…",
@@ -211,5 +211,10 @@
   "b_failed_detail": "エラー: %1",
   "b_missing": "ツールが不足しています: %1。install-rust-deps.sh を一度実行してください（パスワードが必要です）。",
   "b_running_old": "完了。OpenBlade-Synapse はまだ旧バージョンで動作中です。「再起動」を押してください。",
+  "b_step_appimage": "AppImage のビルド（コンテナ内）",
+  "b_appimage_toggle": "AppImage もビルド（podman / docker）",
+  "b_appimage_phase": "AppImage：%1",
+  "b_done_appimage": "%1 秒で完了。AppImage：dist/%2",
+  "b_appimage_engine": "AppImage には podman または docker が必要です – 例: sudo dnf install podman",
   "b_log": "ログ"
 }

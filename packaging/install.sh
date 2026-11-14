@@ -23,6 +23,9 @@ echo "OpenBlade-Synapse added to the application menu."
 if ! gdbus introspect --session --dest org.razer --object-path /org/razer >/dev/null 2>&1; then
   echo "! The OpenRazer daemon is not running – install OpenRazer: https://openrazer.github.io/#download"
 fi
+if [ ! -w /dev/uinput ]; then
+  echo "! No access to /dev/uinput – button remapping and macros will not work. See README, step 1 (uinput rule)."
+fi
 if ! id -nG | grep -qw plugdev; then
   echo "! You are not in the 'plugdev' group: sudo gpasswd -a \$USER plugdev  (then log out and in)"
 fi

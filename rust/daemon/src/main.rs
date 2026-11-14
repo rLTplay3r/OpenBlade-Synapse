@@ -126,6 +126,7 @@ fn main() {
     let remapper = remapper::Remapper::new(Arc::new(move |e| { let _ = rtx.send(Msg::Remap(e)); }));
     let data = obcore::data_dir();
     if let Err(e) = autostart_migrate() { eprintln!("autostart migration: {e}"); }
+    if let Err(e) = autostart::integrate_appimage() { eprintln!("AppImage menu entry: {e}"); }
     let mut app = app::App::new(data, remapper);
 
     // socket server

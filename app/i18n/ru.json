@@ -201,7 +201,7 @@
   "b_step_build": "Компиляция (Rust + Qt)",
   "b_step_bundle": "Сборка папки программы",
   "b_step_install": "Добавление в меню приложений",
-  "b_install_toggle": "Добавить OpenBlade-Synapse и сборщик в меню приложений",
+  "b_install_toggle": "Добавить в меню приложений",
   "b_ready": "Готово к сборке.",
   "b_working": "Сборка…",
   "b_compiling": "Компиляция %1 из %2…",
@@ -211,5 +211,10 @@
   "b_failed_detail": "Ошибка: %1",
   "b_missing": "Не хватает инструментов: %1. Один раз запустите install-rust-deps.sh (спросит пароль).",
   "b_running_old": "Готово. OpenBlade-Synapse ещё работает в старой версии — нажмите ПЕРЕЗАПУСК.",
+  "b_step_appimage": "Сборка AppImage (в контейнере)",
+  "b_appimage_toggle": "Также собрать AppImage (podman / docker)",
+  "b_appimage_phase": "AppImage: %1",
+  "b_done_appimage": "Готово за %1 с. AppImage: dist/%2",
+  "b_appimage_engine": "Для AppImage нужен podman или docker – напр. sudo dnf install podman",
   "b_log": "ЖУРНАЛ"
 }

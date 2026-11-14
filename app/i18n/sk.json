@@ -201,7 +201,7 @@
   "b_step_build": "Kompilácia (Rust + Qt)",
   "b_step_bundle": "Zostavenie priečinka s programom",
   "b_step_install": "Pridanie do menu aplikácií",
-  "b_install_toggle": "Pridať OpenBlade-Synapse a builder do menu aplikácií",
+  "b_install_toggle": "Pridať do menu aplikácií",
   "b_ready": "Pripravené na zostavenie.",
   "b_working": "Zostavujem…",
   "b_compiling": "Kompilujem %1 z %2…",
@@ -211,5 +211,10 @@
   "b_failed_detail": "Chyba: %1",
   "b_missing": "Chýbajú nástroje: %1. Raz spusti install-rust-deps.sh (pýta si heslo).",
   "b_running_old": "Hotovo. OpenBlade-Synapse ešte beží v starej verzii – stlač REŠTART.",
+  "b_step_appimage": "Zostavenie AppImage (v kontajneri)",
+  "b_appimage_toggle": "Zostaviť aj AppImage (podman / docker)",
+  "b_appimage_phase": "AppImage: %1",
+  "b_done_appimage": "Hotovo za %1 s. AppImage: dist/%2",
+  "b_appimage_engine": "Na AppImage treba podman alebo docker – napr. sudo dnf install podman",
   "b_log": "LOG"
 }
