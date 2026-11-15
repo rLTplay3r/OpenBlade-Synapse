@@ -95,7 +95,7 @@ sudo apt install -y qml6-module-qtquick qml6-module-qtquick-controls qml6-module
 ```
 Ubuntu **22.04 / 24.04** and the distributions based on them (Linux Mint 21/22, Pop!_OS 22.04/24.04, Zorin 17,
 elementary 7/8) ship Qt 6.2 / 6.4, which is too old for the prebuilt folder (Qt ≥ 6.6 is needed).
-Use the [AppImage](#appimage) there – it brings its own Qt.
+Use the [AppImage](#appimage) there – it brings its own Qt, so the Qt packages are not needed.
 </details>
 
 <details>
@@ -134,32 +134,32 @@ On NixOS the group is `openrazer` instead of `plugdev`.
 
 ### 2. OpenBlade-Synapse
 
-1. Download `OpenBlade-Synapse-<version>-linux-x86_64.tar.gz` from [**Releases**](https://github.com/rLTplay3r/OpenBlade-Synapse/releases/latest).
-2. Extract it anywhere (e.g. `~/Applications`).
-3. Run `install.sh` in the extracted folder once – it adds **OpenBlade-Synapse** to your application menu
+<a id="appimage"></a>
+#### AppImage (recommended)
+
+A single file that brings its own Qt 6.11, so it also runs on older distributions (glibc ≥ 2.35: Ubuntu 22.04+,
+Linux Mint 21+, Pop!_OS 22.04+, Debian 12+, …).
+
+1. Download `OpenBlade-Synapse-<version>-x86_64.AppImage` from [**Releases**](https://github.com/rLTplay3r/OpenBlade-Synapse/releases/latest).
+2. Make it executable: right-click → *Properties* → *Executable*, or `chmod +x OpenBlade-Synapse-*.AppImage`.
+3. Double-click it. On its first start it adds itself to the application menu.
+
+To remove it, delete the file (and `~/.local/share/applications/openblade-synapse.desktop`).
+
+#### Classic download (folder)
+
+If you prefer a plain folder, the same release also has `OpenBlade-Synapse-<version>-linux-x86_64.tar.gz`:
+
+1. Download it from [**Releases**](https://github.com/rLTplay3r/OpenBlade-Synapse/releases/latest) and extract it anywhere (e.g. `~/Applications`).
+2. Run `install.sh` in the extracted folder once – it adds **OpenBlade-Synapse** to your application menu
    (no root needed; the program stays in that folder). Or just double-click `OpenBlade-Synapse`.
 
 `uninstall.sh` removes the menu and autostart entries; delete the folder to remove the program.
-Settings live in `~/.config/openblade-synapse/`.
+The folder uses the system's Qt: it needs glibc ≥ 2.39 and **Qt ≥ 6.6** with Qt Quick (the Qt packages from step 1).
+It is built and tested with Qt 6.11 on Fedora 45 / KDE Plasma; on older distributions use the AppImage.
 
-**Requirements of the prebuilt folder:** x86_64, glibc ≥ 2.39 and Qt ≥ 6.6 with Qt Quick (the packages above).
-It is built and tested with **Qt 6.11** on Fedora 45 / KDE Plasma; rolling distributions (Arch, Tumbleweed) and current
-Fedora match that best. The tray icon uses StatusNotifierItem (works out of the box on KDE; on GNOME you need the AppIndicator extension).
-If the prebuilt folder does not run on your distribution, use the [AppImage](#appimage) or [build it from source](#build-from-source).
-
-### AppImage
-
-A single file that brings its own Qt 6.11 and runs on older distributions too (glibc ≥ 2.35: Ubuntu 22.04+,
-Linux Mint 21+, Debian 12+, …). OpenRazer still has to be installed (step 1) – it is a kernel driver.
-Download `OpenBlade-Synapse-<version>-x86_64.AppImage` from [**Releases**](https://github.com/rLTplay3r/OpenBlade-Synapse/releases/latest),
-`chmod +x OpenBlade-Synapse-*.AppImage` (or *Properties → Executable*), then double-click it. On its first start it adds
-itself to the application menu (unless a menu entry of the folder installation exists).
-
-If a release has no AppImage yet, build it yourself – you need **podman** or **docker**; the build runs in an Ubuntu 22.04 container
-([`packaging/appimage/`](packaging/appimage)), the first run downloads the build environment (a few GB):
-```bash
-packaging/appimage/make-appimage.sh   # -> dist/OpenBlade-Synapse-v<version>-x86_64.AppImage
-```
+Either way, settings live in `~/.config/openblade-synapse/`. The tray icon uses StatusNotifierItem (works out of the box
+on KDE; on GNOME you need the AppIndicator extension).
 
 ## Build from source
 
@@ -180,6 +180,12 @@ cd OpenBlade-Synapse
 ```
 
 Tests: `cd rust && cargo test`.
+
+To build the **AppImage** yourself you need **podman** or **docker**; the build runs in an Ubuntu 22.04 container
+([`packaging/appimage/`](packaging/appimage)), the first run downloads the build environment (a few GB):
+```bash
+packaging/appimage/make-appimage.sh   # -> dist/OpenBlade-Synapse-v<version>-x86_64.AppImage
+```
 
 ## How it works
 
