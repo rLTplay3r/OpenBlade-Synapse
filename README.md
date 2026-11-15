@@ -49,7 +49,7 @@
 ### 1. OpenRazer + dependencies (copy & paste for your distribution)
 
 One block per distribution. It installs the **OpenRazer** driver and daemon and the **Qt 6 / Qt Quick** libraries the
-window needs, allows button remapping (access to `/dev/uinput` for the logged-in user – the same rule Steam and
+window needs, `fuse3` (to start the AppImage), allows button remapping (access to `/dev/uinput` for the logged-in user – the same rule Steam and
 KDE Connect use) and adds you to the `plugdev` group. OpenRazer commands are taken from
 [openrazer.github.io](https://openrazer.github.io/#download). **Reboot afterwards** (driver, group and rule take effect).
 
@@ -57,7 +57,7 @@ KDE Connect use) and adds you to the `plugdev` group. OpenRazer commands are tak
 <summary><b>Fedora / Nobara</b> (41 and newer)</summary>
 
 ```bash
-sudo dnf install -y kernel-devel qt6-qtdeclarative && \
+sudo dnf install -y kernel-devel qt6-qtdeclarative fuse3 && \
 sudo dnf config-manager addrepo --from-repofile=https://openrazer.github.io/hardware:razer.repo && \
 sudo dnf install -y openrazer-meta && \
 echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
@@ -71,7 +71,7 @@ signing key – and then this block.
 <summary><b>Arch Linux / Manjaro / EndeavourOS</b></summary>
 
 ```bash
-sudo pacman -S --needed linux-headers openrazer-daemon qt6-declarative && \
+sudo pacman -S --needed linux-headers openrazer-daemon qt6-declarative fuse3 && \
 echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
 sudo gpasswd -a $USER plugdev
 ```
@@ -83,7 +83,7 @@ Use the headers package matching your kernel (`linux-lts-headers`, `linux-zen-he
 
 ```bash
 sudo add-apt-repository -y ppa:openrazer/stable && sudo apt update && \
-sudo apt install -y openrazer-meta && \
+sudo apt install -y openrazer-meta fuse3 && \
 echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
 sudo gpasswd -a $USER plugdev
 ```
@@ -102,7 +102,7 @@ Use the [AppImage](#appimage) there – it brings its own Qt, so the Qt packages
 <summary><b>Debian</b> (13 “trixie” and newer)</summary>
 
 ```bash
-sudo apt install -y openrazer-meta qml6-module-qtquick qml6-module-qtquick-controls qml6-module-qtquick-dialogs \
+sudo apt install -y openrazer-meta fuse3 qml6-module-qtquick qml6-module-qtquick-controls qml6-module-qtquick-dialogs \
   qml6-module-qtquick-effects qml6-module-qtquick-shapes qml6-module-qtquick-layouts qml6-module-qtquick-window \
   qml6-module-qtquick-templates qml6-module-qtqml-workerscript && \
 echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
@@ -116,7 +116,7 @@ Debian 12 has Qt 6.4 – use the [AppImage](#appimage).
 
 ```bash
 sudo zypper addrepo https://download.opensuse.org/repositories/hardware:razer/openSUSE_Tumbleweed/hardware:razer.repo && \
-sudo zypper refresh && sudo zypper install openrazer-meta qt6-declarative-imports && \
+sudo zypper refresh && sudo zypper install openrazer-meta qt6-declarative-imports fuse3 && \
 sudo systemctl enable --now dkms.service && \
 echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"' | sudo tee /etc/udev/rules.d/70-openblade-uinput.rules >/dev/null && \
 sudo gpasswd -a $USER plugdev
@@ -143,6 +143,9 @@ Linux Mint 21+, Pop!_OS 22.04+, Debian 12+, …).
 1. Download `OpenBlade-Synapse-<version>-x86_64.AppImage` from [**Releases**](https://github.com/rLTplay3r/OpenBlade-Synapse/releases/latest).
 2. Make it executable: right-click → *Properties* → *Executable*, or `chmod +x OpenBlade-Synapse-*.AppImage`.
 3. Double-click it. On its first start it adds itself to the application menu.
+
+If nothing happens on double-click, start it from a terminal (`./OpenBlade-Synapse-*.AppImage`) to see the error –
+usually “No suitable fusermount binary found”, which means `fuse3` is missing (it is part of the commands in step 1).
 
 To remove it, delete the file (and `~/.local/share/applications/openblade-synapse.desktop`).
 
