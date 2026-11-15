@@ -12,6 +12,7 @@
 <p align="center">
   <a href="https://github.com/rLTplay3r/OpenBlade-Synapse/releases/latest"><b>Download</b></a> ·
   <a href="#install">Install</a> ·
+  <a href="#troubleshooting">Troubleshooting</a> ·
   <a href="#build-from-source">Build from source</a> ·
   <a href="#how-it-works">How it works</a>
 </p>
@@ -53,6 +54,10 @@ window needs, `fuse3` (to start the AppImage), allows button remapping (access t
 KDE Connect use) and adds you to the `plugdev` group. OpenRazer commands are taken from
 [openrazer.github.io](https://openrazer.github.io/#download). **Reboot afterwards** (driver, group and rule take effect).
 
+> **Before you start:** update your system and reboot (`sudo dnf upgrade`, `sudo apt update && sudo apt full-upgrade`,
+> `sudo pacman -Syu`, `sudo zypper dup`) – the driver is built for the running kernel.
+> If your PC uses **Secure Boot** (most new laptops do), read [Secure Boot](#secure-boot) first.
+
 <details open>
 <summary><b>Fedora / Nobara</b> (41 and newer)</summary>
 
@@ -64,7 +69,7 @@ echo 'KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node
 sudo gpasswd -a $USER plugdev
 ```
 With **Secure Boot** enabled, run [`install-openrazer.sh`](install-openrazer.sh) first – it also enrolls the module
-signing key – and then this block.
+signing key – and then this block (see [Secure Boot](#secure-boot)).
 </details>
 
 <details>
@@ -163,6 +168,54 @@ It is built and tested with Qt 6.11 on Fedora 45 / KDE Plasma; on older distribu
 
 Either way, settings live in `~/.config/openblade-synapse/`. The tray icon uses StatusNotifierItem (works out of the box
 on KDE; on GNOME you need the AppIndicator extension).
+
+## Troubleshooting
+
+### Secure Boot
+
+With Secure Boot on, Linux only loads signed kernel modules. The OpenRazer driver is built on your PC, so it has to be
+signed with your own key, and that key has to be enrolled **once** in a blue screen after a reboot. If this step is
+missed, the app says *“Mouse is not connected”* even though everything is installed.
+
+Check whether it applies to you:
+```bash
+mokutil --sb-state          # "SecureBoot enabled"  -> continue below
+lsmod | grep razermouse     # no output             -> the driver is not loaded
+```
+
+**Ubuntu, Linux Mint, Pop!_OS, Zorin, elementary, Debian** – during the installation a text screen
+*“Configuring Secure Boot”* asks you to choose a password (8–16 characters, write it down). If you missed it, run:
+```bash
+sudo update-secureboot-policy --enroll-key            # Ubuntu-based
+sudo mokutil --import /var/lib/dkms/mok.pub           # Debian (and if the line above does not exist)
+```
+
+**Fedora / Nobara** – run [`install-openrazer.sh`](install-openrazer.sh); it asks you to choose the password.
+On **openSUSE** use `sudo mokutil --import /var/lib/dkms/mok.pub` as well.
+
+**Then reboot. A blue screen “Perform MOK management” appears – press a key quickly** (it waits only ~10 s), then:
+**Enroll MOK → Continue → Yes →** type the password **→ Reboot**. That's it – it is needed only once.
+
+**Arch and others without a signing setup:** sign the module yourself (see the
+[ArchWiki](https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface/Secure_Boot)), or turn
+Secure Boot off in your PC's UEFI/BIOS settings.
+
+### The mouse is not found
+
+1. Did you reboot after step 1? (Driver, group and rule only take effect after a reboot.)
+2. `lsmod | grep razermouse` prints nothing → the driver is not loaded: see [Secure Boot](#secure-boot); on Fedora/Arch also
+   make sure the system was updated before the installation, then reinstall the OpenRazer packages and reboot.
+3. `groups` does not list `plugdev` → run `sudo gpasswd -a $USER plugdev` and reboot.
+4. The app says *“The OpenRazer daemon is not available”* → `systemctl --user enable --now openrazer-daemon`.
+5. Is your mouse in the [list of supported devices](https://openrazer.github.io/#devices)?
+
+### Other problems
+
+| Problem | Fix |
+|---|---|
+| Nothing happens when I double-click the AppImage | Start it from a terminal (`./OpenBlade-Synapse-*.AppImage`) to see the error. “No suitable fusermount binary found” → install `fuse3` (it is in the commands of step 1). |
+| No tray icon on GNOME | Install the AppIndicator extension (Fedora: `sudo dnf install gnome-shell-extension-appindicator`, then log out and in and enable it in *Extensions*). Ubuntu has it already. |
+| Button remapping / macros do not work, the app reports no access to `/dev/uinput` | Run the `uinput` line from your block in step 1 and reboot. |
 
 ## Build from source
 
